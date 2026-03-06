@@ -7,19 +7,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#0b1120;
-  --ink2:#16213e;
-  --gold:#c8973a;
-  --gold2:#e8b84b;
-  --gold3:#f5d98a;
-  --cream:#faf6ee;
-  --white:#ffffff;
-  --muted:#6e7a94;
-  --soft:#f0f3fa;
-  --green:#1a8c52;
-  --red:#b83232;
-  --wa:#25D366;
-  --border:rgba(200,151,58,0.22);
+  --ink:#0b1120;--ink2:#16213e;--gold:#c8973a;--gold2:#e8b84b;--gold3:#f5d98a;
+  --cream:#faf6ee;--white:#ffffff;--muted:#6e7a94;--soft:#f0f3fa;
+  --green:#1a8c52;--red:#b83232;--wa:#25D366;--border:rgba(200,151,58,0.22);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -27,7 +17,7 @@ body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--ink);ov
 h1,h2,h3{font-family:'Cormorant Garamond',serif;}
 
 /* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:68px;background:rgba(11,17,32,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
+.nav{position:fixed;top:0;left:0;right:0;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:68px;background:rgba(11,17,32,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
 .logo-icon{display:flex;align-items:flex-end;gap:3px;height:28px;}
 .logo-icon span{width:4px;background:var(--gold);border-radius:2px;display:block;}
@@ -59,7 +49,7 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;}
 .btn-gold:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(200,151,58,0.4);}
 .btn-ghost{background:transparent;color:#fff;padding:15px 32px;border-radius:10px;font-weight:600;font-size:1rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s;border:1px solid rgba(255,255,255,0.25);cursor:pointer;font-family:'Outfit',sans-serif;}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold);}
-.hero-stats{display:flex;justify-content:center;gap:0;margin-top:50px;border:1px solid var(--border);border-radius:14px;overflow:hidden;max-width:500px;margin-left:auto;margin-right:auto;}
+.hero-stats{display:flex;justify-content:center;margin-top:50px;border:1px solid var(--border);border-radius:14px;overflow:hidden;max-width:500px;margin-left:auto;margin-right:auto;}
 .stat{flex:1;padding:20px 10px;text-align:center;background:rgba(255,255,255,0.03);border-right:1px solid var(--border);}
 .stat:last-child{border-right:none;}
 .stat-n{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1;}
@@ -73,8 +63,8 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;}
 @keyframes tick{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 
 /* PARTNERS */
-.partners-bar{background:var(--white);padding:30px 40px;display:flex;align-items:center;justify-content:center;gap:30px;flex-wrap:wrap;border-bottom:1px solid #e8edf5;}
-.p-chip{display:flex;align-items:center;gap:10px;padding:12px 28px;border-radius:10px;border:1px solid #e0e7f0;font-weight:700;font-size:0.95rem;color:var(--ink2);background:#fff;transition:all 0.2s;}
+.partners-bar{background:var(--white);padding:28px 40px;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;border-bottom:1px solid #e8edf5;}
+.p-chip{display:flex;align-items:center;gap:9px;padding:11px 22px;border-radius:10px;border:1px solid #e0e7f0;font-weight:700;font-size:0.88rem;color:var(--ink2);background:#fff;transition:all 0.2s;}
 .p-chip:hover{border-color:var(--gold);box-shadow:0 4px 15px rgba(200,151,58,0.12);}
 
 /* SECTIONS */
@@ -85,6 +75,9 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;}
 .sec-title em{font-style:italic;color:var(--gold);}
 .sec-sub{font-size:1.05rem;color:var(--muted);max-width:560px;line-height:1.8;}
 .bar{width:50px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;margin:14px 0 50px;}
+.dark-ey{color:var(--gold2)!important;}
+.dark-ti{color:#fff!important;}
+.dark-su{color:rgba(255,255,255,0.55)!important;}
 
 /* WHY LIC */
 .why-bg{background:var(--ink2);}
@@ -97,9 +90,6 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;}
 .why-card h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:#fff;margin-bottom:10px;font-weight:700;}
 .why-card p{color:rgba(255,255,255,0.58);font-size:0.88rem;line-height:1.75;}
 .w-tag{display:inline-block;background:rgba(200,151,58,0.15);color:var(--gold2);padding:3px 10px;border-radius:20px;font-size:0.72rem;font-weight:700;margin-top:12px;}
-.why-eyebrow{color:var(--gold2)!important;}
-.why-title{color:#fff!important;}
-.why-sub{color:rgba(255,255,255,0.55)!important;}
 
 /* PLANS */
 .plans-bg{background:var(--cream);}
@@ -122,7 +112,7 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;}
 .pc h3{font-family:'Cormorant Garamond',serif;font-size:1.18rem;color:var(--ink);margin-bottom:4px;font-weight:700;}
 .pc-num{font-size:0.75rem;color:var(--muted);font-weight:600;margin-bottom:10px;}
 .pc p{font-size:0.87rem;color:var(--muted);line-height:1.68;padding-bottom:16px;}
-.pc-ft{border-top:1px solid #f0f4ff;padding:14px 24px;display:flex;gap:16px;background:#fafbff;flex-wrap:wrap;}
+.pc-ft{border-top:1px solid #f0f4ff;padding:14px 24px;display:flex;gap:14px;background:#fafbff;flex-wrap:wrap;}
 .ft{font-size:0.77rem;color:var(--ink);font-weight:600;display:flex;align-items:center;gap:5px;}
 .ft::before{content:'✓';color:var(--green);font-weight:800;font-size:0.85rem;}
 .pc-btn-row{padding:0 24px 20px;margin-top:8px;}
@@ -148,8 +138,6 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;}
 .calc-bg{background:var(--ink2);position:relative;overflow:hidden;}
 .calc-bg::before{content:'';position:absolute;top:-150px;right:-150px;width:500px;height:500px;background:radial-gradient(circle,rgba(200,151,58,0.06),transparent 70%);border-radius:50%;pointer-events:none;}
 .calc-layout{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:start;position:relative;z-index:1;}
-.calc-left .sec-title{color:#fff;}
-.calc-left .sec-sub{color:rgba(255,255,255,0.55);}
 .calc-feats{margin-top:30px;display:flex;flex-direction:column;gap:14px;}
 .cf{display:flex;align-items:flex-start;gap:12px;}
 .cf-icon{width:38px;height:38px;background:rgba(200,151,58,0.1);border:1px solid var(--border);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
@@ -193,11 +181,9 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;}
 .cta-bg{background:linear-gradient(145deg,var(--ink),var(--ink2));position:relative;overflow:hidden;}
 .cta-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(200,151,58,0.06),transparent 60%);pointer-events:none;}
 .cta-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;position:relative;z-index:1;}
-.cta-left .sec-title{color:#fff;}
-.cta-left p{color:rgba(255,255,255,0.65);font-size:1rem;line-height:1.8;margin-top:16px;}
 .cta-pts{margin-top:28px;display:flex;flex-direction:column;gap:12px;}
 .cpt{display:flex;align-items:center;gap:11px;color:rgba(255,255,255,0.82);font-size:0.9rem;}
-.cpt::before{content:'✓';width:22px;height:22px;background:rgba(200,151,58,0.18);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.72rem;color:var(--gold2);font-weight:800;flex-shrink:0;text-align:center;line-height:22px;}
+.cpt::before{content:'✓';width:22px;height:22px;background:rgba(200,151,58,0.18);border:1px solid var(--border);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.72rem;color:var(--gold2);font-weight:800;flex-shrink:0;text-align:center;line-height:22px;}
 .form-box{background:#fff;border-radius:20px;padding:40px;box-shadow:0 25px 70px rgba(0,0,0,0.35);}
 .form-box h3{font-family:'Cormorant Garamond',serif;font-size:1.55rem;color:var(--ink);margin-bottom:5px;}
 .form-box p{color:var(--muted);font-size:0.85rem;margin-bottom:22px;}
@@ -212,10 +198,10 @@ footer p{color:rgba(255,255,255,0.4);font-size:0.82rem;line-height:1.9;}
 footer strong{color:var(--gold);}
 .disc{max-width:880px;margin:16px auto 0;font-size:0.74rem;color:rgba(255,255,255,0.25);line-height:1.75;}
 
-/* WA */
+/* WHATSAPP */
 .wa{position:fixed;bottom:28px;right:28px;background:var(--wa);color:#fff;text-decoration:none;padding:14px 24px;border-radius:50px;font-weight:700;font-size:0.95rem;display:flex;align-items:center;gap:9px;box-shadow:0 6px 22px rgba(37,211,102,0.45);z-index:998;transition:all 0.3s;animation:wab 3s ease-in-out infinite;}
 @keyframes wab{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
-.wa:hover{transform:scale(1.05)!important;}
+.wa:hover{transform:scale(1.05)!important;animation:none;}
 
 /* MODAL */
 .overlay{position:fixed;inset:0;background:rgba(11,17,32,0.88);z-index:2000;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:all 0.3s;backdrop-filter:blur(6px);}
@@ -234,28 +220,30 @@ footer strong{color:var(--gold);}
 
 /* RESPONSIVE */
 @media(max-width:1024px){
-.why-grid,.feat-grid,.test-grid{grid-template-columns:1fr 1fr;}
-.calc-layout,.cta-layout{grid-template-columns:1fr;}
+  .why-grid,.feat-grid,.test-grid{grid-template-columns:1fr 1fr;}
+  .calc-layout,.cta-layout{grid-template-columns:1fr;}
 }
 @media(max-width:768px){
-.hero h1{font-size:2.8rem;}
-.sec-title{font-size:2rem;}
-.why-grid,.feat-grid,.test-grid{grid-template-columns:1fr;}
-.nav-links{display:none;}
-.plans-grid{grid-template-columns:1fr;}
-.fr{grid-template-columns:1fr;}
-.m-feats{grid-template-columns:1fr;}
-.sec{padding:70px 20px;}
-.nav{padding:0 20px;}
-.hero{padding:100px 20px 60px;}
-.partners-bar{padding:20px;}
-.form-box{padding:30px 24px;}
-.calc-box{padding:28px 22px;}
+  .hero h1{font-size:2.6rem;}
+  .sec-title{font-size:2rem;}
+  .why-grid,.feat-grid,.test-grid{grid-template-columns:1fr;}
+  .nav-links{display:none;}
+  .plans-grid{grid-template-columns:1fr;}
+  .fr{grid-template-columns:1fr;}
+  .m-feats{grid-template-columns:1fr;}
+  .sec{padding:70px 20px;}
+  .nav{padding:0 20px;}
+  .hero{padding:100px 20px 60px;}
+  .partners-bar{padding:20px;}
+  .form-box{padding:28px 20px;}
+  .calc-box{padding:26px 18px;}
+  .hero-stats{margin-top:40px;}
 }
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav class="nav">
   <a href="#" class="logo">
     <div class="logo-icon"><span></span><span></span><span></span></div>
@@ -274,7 +262,7 @@ footer strong{color:var(--gold);}
   <div class="hero-bg"></div>
   <div class="hero-dots"></div>
   <div class="hero-inner">
-    <div class="hero-pill">🏛️ LIC Authorized Agent &nbsp;·&nbsp; 5+ Years Experience</div>
+    <div class="hero-pill">🏛️ LIC Authorized Agent &nbsp;·&nbsp; 5 Years Experience</div>
     <h1>Grow, Protect &amp;<br><em>Secure</em> Your Family's<br>Financial Future</h1>
     <p class="hero-sub">Expert guidance on all LIC plans — transparent advice, zero pressure. Serving clients across Gujarat, Maharashtra &amp; beyond.</p>
     <div class="hero-btns">
@@ -284,8 +272,8 @@ footer strong{color:var(--gold);}
     <div class="hero-stats">
       <div class="stat"><div class="stat-n">25+</div><div class="stat-l">LIC Plans</div></div>
       <div class="stat"><div class="stat-n">3×</div><div class="stat-l">Award Winner</div></div>
+      <div class="stat"><div class="stat-n">5+</div><div class="stat-l">Yrs Exp.</div></div>
       <div class="stat"><div class="stat-n">4</div><div class="stat-l">Languages</div></div>
-      <div class="stat"><div class="stat-n">5+</div><div class="stat-l">Years Exp.</div></div>
     </div>
   </div>
 </section>
@@ -293,20 +281,18 @@ footer strong{color:var(--gold);}
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-track">
-    <span>100% Sovereign Guarantee by Govt. of India (Section 37 of LIC Act)</span>
+    <span>100% Sovereign Guarantee — Section 37 of LIC Act</span>
     <span>Tax-Free Maturity under Section 10(10D)</span>
-    <span>Zero GST on Life Insurance Premiums</span>
-    <span>Triple National Excellence Award Winner</span>
-    <span>Call +91-90544-89003 for Free Consultation</span>
-    <span>Consultation in English · हिंदी · मराठी · ગુજરાતી</span>
     <span>LIC Claim Settlement Ratio: 98.62%</span>
-    <span>100% Sovereign Guarantee by Govt. of India (Section 37 of LIC Act)</span>
+    <span>Triple 15th Aug National Excellence Medal Winner</span>
+    <span>Call +91-90544-89003 for Free Consultation</span>
+    <span>English · हिंदी · मराठी · ગુજરાતી</span>
+    <span>100% Sovereign Guarantee — Section 37 of LIC Act</span>
     <span>Tax-Free Maturity under Section 10(10D)</span>
-    <span>Zero GST on Life Insurance Premiums</span>
-    <span>Triple National Excellence Award Winner</span>
-    <span>Call +91-90544-89003 for Free Consultation</span>
-    <span>Consultation in English · हिंदी · मराठी · ગુજरاتी</span>
     <span>LIC Claim Settlement Ratio: 98.62%</span>
+    <span>Triple 15th Aug National Excellence Medal Winner</span>
+    <span>Call +91-90544-89003 for Free Consultation</span>
+    <span>English · हिंदी · मराठी · ગુजरาती</span>
   </div>
 </div>
 
@@ -322,45 +308,45 @@ footer strong{color:var(--gold);}
 <!-- WHY LIC -->
 <section class="sec why-bg" id="why">
   <div class="wrap">
-    <div class="eyebrow why-eyebrow">Why Choose LIC of India</div>
-    <h2 class="sec-title why-title">India's Most <em>Trusted</em><br>Financial Institution</h2>
-    <p class="sec-sub why-sub">Since 1956 — 29 crore+ families protected. The only insurer backed by the full faith of the Government of India.</p>
+    <div class="eyebrow dark-ey">Why Choose LIC of India</div>
+    <h2 class="sec-title dark-ti">India's Most <em>Trusted</em><br>Financial Institution</h2>
+    <p class="sec-sub dark-su">Since 1956 — 29 crore+ families protected. The only insurer backed by the full faith of the Government of India.</p>
     <div class="bar"></div>
     <div class="why-grid">
       <div class="why-card">
         <div class="w-icon">🇮🇳</div>
         <h3>Sovereign Guarantee (Sec 37)</h3>
-        <p>Every LIC policy is backed by the Government of India under Section 37 of the LIC Act. Your sum assured and bonuses have a 100% government guarantee — impossible with any private insurer.</p>
+        <p>Every LIC policy is backed by the Government of India under Section 37 of the LIC Act. Your sum assured and bonuses carry a 100% government guarantee — impossible with any private insurer.</p>
         <span class="w-tag">Zero Default Risk</span>
       </div>
       <div class="why-card">
         <div class="w-icon">💰</div>
         <h3>100% Tax-Free Maturity</h3>
-        <p>The entire maturity amount — including bonuses — is exempt from income tax under Section 10(10D). Keep every single rupee. No TDS, no declarations, no tax filing complications.</p>
+        <p>The entire maturity amount including bonuses is exempt from income tax under Section 10(10D). Keep every rupee — no TDS, no declarations, no tax filing complications at maturity.</p>
         <span class="w-tag">Sec 10(10D) Exempt</span>
       </div>
       <div class="why-card">
         <div class="w-icon">📈</div>
         <h3>Annual Reversionary Bonus</h3>
-        <p>LIC declares Simple Reversionary Bonus every year on your Sum Assured. Over 20–25 years this compounds into a massive corpus — often 3–4x total premiums paid.</p>
+        <p>LIC declares Simple Reversionary Bonus every year on your Sum Assured. Over 20–25 years this compounds into a massive corpus — often 3–4× total premiums paid.</p>
         <span class="w-tag">Guaranteed Wealth Growth</span>
       </div>
       <div class="why-card">
         <div class="w-icon">🏆</div>
         <h3>98.62% Claim Settlement</h3>
-        <p>LIC settles 98.62% of all death claims — the highest in the entire Indian insurance industry. Your family is guaranteed to receive the benefit when it matters most.</p>
+        <p>LIC settles 98.62% of all death claims — the highest in the Indian insurance industry. Your family is guaranteed to receive the benefit when it matters most.</p>
         <span class="w-tag">Highest in Industry</span>
       </div>
       <div class="why-card">
         <div class="w-icon">📜</div>
         <h3>80C + 80D Tax Deductions</h3>
-        <p>Life insurance premiums qualify for Section 80C deductions up to ₹1.5 lakh per year. Health riders qualify under 80D. Save tax while you build wealth.</p>
+        <p>Life insurance premiums qualify for Section 80C deductions up to ₹1.5 lakh per year. Health rider premiums qualify under 80D. Save tax while building wealth simultaneously.</p>
         <span class="w-tag">Dual Tax Benefit</span>
       </div>
       <div class="why-card">
         <div class="w-icon">🌐</div>
         <h3>Pan-India Network</h3>
-        <p>2,000+ branches, 13+ lakh agents across India. Effortless premium payment, policy servicing, and claim support wherever you are — including NRI customers abroad.</p>
+        <p>2,000+ branches, 13+ lakh agents across India. Effortless premium payment, policy servicing and claim support wherever you are — including NRI customers abroad.</p>
         <span class="w-tag">Everywhere You Are</span>
       </div>
     </div>
@@ -370,17 +356,17 @@ footer strong{color:var(--gold);}
 <!-- FEATURED TOP 3 -->
 <section class="sec feat-bg">
   <div class="wrap">
-    <div class="eyebrow why-eyebrow">Most Recommended</div>
-    <h2 class="sec-title why-title">Our Top <em>3 Featured</em> Plans</h2>
+    <div class="eyebrow dark-ey">Most Recommended</div>
+    <h2 class="sec-title dark-ti">Our Top <em>3 Featured</em> Plans</h2>
     <div class="bar"></div>
     <div class="feat-grid">
       <div class="fc">
         <div class="fc-icon">💎</div>
-        <h3>Jeevan Labh (836)</h3>
-        <div class="fc-num">PLAN 836 · LIMITED PAY ENDOWMENT</div>
-        <p>India's best-selling plan. Pay for 10/16/21 years, stay covered for 16/21/25 years. Bonus accumulates massively — maturity often 3–4x premiums paid.</p>
+        <h3>Jeevan Labh (Plan 736)</h3>
+        <div class="fc-num">TABLE 736 · LIMITED PAY ENDOWMENT · UIN 512N304V03</div>
+        <p>India's best-selling plan. Pay for 10/16/21 years, stay covered for 16/21/25 years. Bonus accumulates massively — maturity corpus often 3–4× total premiums paid.</p>
         <div class="fc-list">
-          <div class="fl">Limited premium, longer cover</div>
+          <div class="fl">Limited premium, longer cover period</div>
           <div class="fl">Annual reversionary bonus + FAB</div>
           <div class="fl">100% tax-free maturity</div>
           <div class="fl">Loan facility available</div>
@@ -388,24 +374,24 @@ footer strong{color:var(--gold);}
       </div>
       <div class="fc">
         <div class="fc-icon">🌿</div>
-        <h3>Jeevan Umang (945)</h3>
-        <div class="fc-num">PLAN 945 · WHOLE LIFE + PENSION</div>
-        <p>The only plan that pays 8% of SA every year for LIFE after premium term ends, PLUS a lump-sum SA + bonus at age 100. India's best retirement plan.</p>
+        <h3>Jeevan Umang (Plan 745)</h3>
+        <div class="fc-num">TABLE 745 · WHOLE LIFE + PENSION · UIN 512N312V03</div>
+        <p>The only plan that pays 8% of SA every year for LIFE after premium term ends, PLUS full SA + bonus at age 100. India's best retirement + whole life plan combined.</p>
         <div class="fc-list">
-          <div class="fl">8% SA annually for lifetime</div>
-          <div class="fl">Full SA + bonus at age 100</div>
+          <div class="fl">8% SA paid annually for lifetime</div>
+          <div class="fl">Full SA + bonus at age 100/death</div>
           <div class="fl">Whole life death cover</div>
           <div class="fl">Ideal for retirement planning</div>
         </div>
       </div>
       <div class="fc">
         <div class="fc-icon">📊</div>
-        <h3>Index Plus (873)</h3>
-        <div class="fc-num">PLAN 873 · INDEX-LINKED ULIP</div>
-        <p>India's first index ULIP by LIC. Your money grows with Nifty 50 / BSE Sensex. Market-linked wealth + guaranteed 10x life cover. Best of both worlds.</p>
+        <h3>Index Plus (Plan 873)</h3>
+        <div class="fc-num">TABLE 873 · INDEX-LINKED ULIP · UIN 512L357V01</div>
+        <p>LIC's first index ULIP. Money grows with Nifty 50 / BSE Sensex. Market-linked wealth + guaranteed 10× life cover. Best of both worlds — growth plus protection.</p>
         <div class="fc-list">
           <div class="fl">Nifty 50 / BSE Sensex linked</div>
-          <div class="fl">10x annual premium life cover</div>
+          <div class="fl">10× annual premium life cover</div>
           <div class="fl">Partial withdrawal after 5 yrs</div>
           <div class="fl">Section 80C + 10(10D) benefits</div>
         </div>
@@ -417,9 +403,9 @@ footer strong{color:var(--gold);}
 <!-- ALL PLANS -->
 <section class="sec plans-bg" id="plans">
   <div class="wrap">
-    <div class="eyebrow">Complete LIC Portfolio</div>
+    <div class="eyebrow">Complete LIC Portfolio — Verified Plan Numbers 2025–26</div>
     <h2 class="sec-title">All <em>LIC Plans</em> — Every Category</h2>
-    <p class="sec-sub">Click any plan to see full details and enquire instantly.</p>
+    <p class="sec-sub">Plan numbers verified from official LIC website. Click any plan for full details and instant enquiry.</p>
     <div class="bar"></div>
     <div class="filter-row">
       <button class="f-btn on" data-c="all">All Plans</button>
@@ -434,63 +420,171 @@ footer strong{color:var(--gold);}
     </div>
     <div class="plans-grid" id="pg">
 
-      <!-- ENDOWMENT -->
-      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span><h3>New Jeevan Anand (915)</h3><div class="pc-num">Plan 915 · Participating Endowment</div><p>Classic endowment + whole life. Receive full maturity at term end, yet life cover continues forever. On death after maturity, full SA still paid to nominees.</p></div><div class="pc-ft"><span class="ft">Whole life cover</span><span class="ft">Bonus+FAB</span><span class="ft">Loan facility</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Jeevan Anand','915','endow','New Jeevan Anand (Plan 915) is LICs most popular endowment plan. At the end of the policy term, Sum Assured + Simple Reversionary Bonus + Final Additional Bonus is paid as maturity. Despite receiving maturity, the life cover continues for the full Sum Assured until death — protecting your family forever. Ideal for those who want savings plus lifelong protection.','Whole life cover after maturity,Annual Simple Reversionary Bonus,Final Additional Bonus at maturity,Loan against policy after 3 yrs,Premium waiver on total disability,Section 80C tax deduction,Section 10(10D) tax-free maturity,Entry age 18 to 50 years')">View Full Details</button></div></div>
+      <!-- ===== ENDOWMENT ===== -->
+      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span>
+        <h3>New Jeevan Anand (Plan 715)</h3><div class="pc-num">Table 715 · UIN 512N279V03 · Participating Endowment</div>
+        <p>Classic endowment + whole life combo. Receive full SA + bonus at maturity, yet life cover continues forever. On death after maturity, full SA is still paid to nominees.</p></div>
+        <div class="pc-ft"><span class="ft">Whole life cover</span><span class="ft">SRB + FAB</span><span class="ft">Loan facility</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Jeevan Anand','715','endow','New Jeevan Anand (Table 715) is LICs most popular endowment plan. On maturity: SA + Simple Reversionary Bonus + Final Additional Bonus is paid. Despite receiving maturity, life cover continues for the full SA until death. Min SA ₹1 Lakh. Entry age 18 to 50 years. Policy term 15 to 35 years. Premium paying term equals policy term.','Min SA ₹1 Lakh,Entry age 18 to 50 years,Policy term 15 to 35 years,Life cover continues after maturity,Annual Simple Reversionary Bonus,Final Additional Bonus at maturity,Loan after 3 yrs,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span><h3>Jeevan Labh (836)</h3><div class="pc-num">Plan 836 · Limited Pay Endowment</div><p>India's best-selling plan. Pay for 10, 16, or 21 years — covered for 16, 21, or 25 years. Higher bonus accumulation + FAB makes maturity corpus 3–4× premiums paid.</p></div><div class="pc-ft"><span class="ft">Limited pay</span><span class="ft">High bonus rate</span><span class="ft">Tax-free</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Labh','836','endow','Jeevan Labh (Plan 836) is a non-linked participating limited premium endowment plan. Premium payment terms are 10, 16, or 21 years with policy terms of 16, 21, or 25 years respectively. Maturity benefit = Basic SA + Simple Reversionary Bonus + Final Additional Bonus. The maturity corpus is typically 3-4x the total premiums paid. This plan is ideal for long-term wealth creation with life protection.','Limited premium 10/16/21 years,Full cover for 16/21/25 years,Annual Simple Reversionary Bonus,Final Additional Bonus at maturity,Loan after 3 premium years,Accidental death & disability rider,Section 80C + 10(10D) benefits,Min Sum Assured ₹2 Lakh')">View Full Details</button></div></div>
+      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span>
+        <h3>Jeevan Labh (Plan 736)</h3><div class="pc-num">Table 736 · UIN 512N304V03 · Limited Pay Endowment</div>
+        <p>India's best-selling plan. Pay for 10, 16, or 21 years — covered for 16, 21, or 25 years. Higher bonus + FAB makes maturity corpus typically 3–4× premiums paid.</p></div>
+        <div class="pc-ft"><span class="ft">Limited pay</span><span class="ft">High bonus rate</span><span class="ft">Tax-free</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Labh','736','endow','Jeevan Labh (Table 736) is a non-linked participating limited premium endowment plan. Premium terms: 10 yrs (policy 16 yrs), 16 yrs (policy 21 yrs), 21 yrs (policy 25 yrs). Maturity = SA + Simple Reversionary Bonus + Final Additional Bonus. Min SA ₹2 Lakh. Entry age 8 to 59 years. The maturity corpus is typically 3–4× total premiums paid.','Min SA ₹2 Lakh,Entry age 8 to 59 years,Pay 10/16/21 yrs — cover 16/21/25 yrs,Annual Simple Reversionary Bonus,Final Additional Bonus at maturity,Loan after 3 premium years,Accidental death & disability rider,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span><h3>Jeevan Lakshya (933)</h3><div class="pc-num">Plan 933 · Family Income + Endowment</div><p>On your death, family gets 10% of SA every year until maturity PLUS full SA + bonus at term end. Designed for breadwinners — family income never stops.</p></div><div class="pc-ft"><span class="ft">Annual family income</span><span class="ft">Full maturity</span><span class="ft">Breadwinner plan</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Lakshya','933','endow','Jeevan Lakshya (Plan 933) is designed for breadwinners. On death during policy term: 10% of SA is paid annually to the family till end of policy term. On survival at maturity: full SA + Simple Reversionary Bonus + Final Additional Bonus is paid. Premium paying term is policy term minus 3 years. This ensures family income is not disrupted under any circumstance.','Annual 10% SA to family on death,Full SA + bonuses at maturity,Premium term = policy term minus 3,Entry age 18 to 50 years,Term 13 to 25 years,Accidental death rider available,Loan facility after 3 yrs,80C + 10(10D) tax benefits')">View Full Details</button></div></div>
+      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span>
+        <h3>Jeevan Lakshya (Plan 733)</h3><div class="pc-num">Table 733 · UIN 512N297V03 · Family Income Endowment</div>
+        <p>On your death, family gets 10% of SA every year until maturity PLUS full SA + bonus at term end. Designed for breadwinners — family income never stops regardless.</p></div>
+        <div class="pc-ft"><span class="ft">Annual family income</span><span class="ft">Full maturity</span><span class="ft">Breadwinner plan</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Lakshya','733','endow','Jeevan Lakshya (Table 733) is designed for family breadwinners. On death during policy term: 10% of SA paid annually to family till end of term + full SA + SRB + FAB paid at maturity. On survival at maturity: SA + SRB + FAB paid normally. Premium paying term = policy term minus 3 years. Min SA ₹1 Lakh. Entry age 18 to 50 years. Term 13 to 25 years.','Min SA ₹1 Lakh,Entry age 18 to 50 years,Policy term 13 to 25 years,Annual 10% SA to family on death,Full SA + bonus at maturity,PPT = policy term minus 3 years,Accidental death rider available,80C + 10(10D) tax benefits')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span><h3>Bima Shree (848)</h3><div class="pc-num">Plan 848 · High SA Limited Pay</div><p>Exclusive for high-net-worth clients. Min SA ₹10 Lakh. Guaranteed Additions + Loyalty Additions + periodic survival benefits. The premium endowment plan.</p></div><div class="pc-ft"><span class="ft">Min SA ₹10 Lakh</span><span class="ft">Guaranteed additions</span><span class="ft">Loyalty additions</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Bima Shree','848','endow','Bima Shree (Plan 848) is a non-linked, limited premium money-back plan with Guaranteed Additions and Loyalty Additions. Minimum Sum Assured is ₹10 Lakh. Premium paying terms are 10, 14, or 16 years. Guaranteed Additions of ₹50-55 per ₹1000 SA per year accrue during the premium paying term. Loyalty additions are paid at specific intervals and at maturity. This is the ideal plan for high-income earners.','Min SA ₹10 Lakh,Guaranteed Additions ₹50-55/₹1000/yr,Loyalty Additions at milestones,Critical Illness Benefit rider,Survival benefits at intervals,Premium waiver benefit,Loan facility available,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
+      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span>
+        <h3>New Endowment Plan (Plan 714)</h3><div class="pc-num">Table 714 · UIN 512N277V03 · Basic Endowment</div>
+        <p>LIC's foundation endowment — straightforward protection + savings. Flexible term 12–35 years. Entry age 8–55 years. Perfect for first-time buyers starting their insurance journey.</p></div>
+        <div class="pc-ft"><span class="ft">Age 8–55 yrs</span><span class="ft">Term 12–35 yrs</span><span class="ft">Simple & reliable</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Endowment Plan','714','endow','New Endowment Plan (Table 714) is LICs most basic savings-cum-protection endowment plan. Entry age 8 to 55 years. Policy term 12 to 35 years. Min SA ₹1 Lakh. On maturity: SA + Simple Reversionary Bonus + Final Additional Bonus is paid. On death: SA paid immediately to nominee. Perfect for first-time insurance buyers looking to start saving early.','Min SA ₹1 Lakh,Entry age 8 to 55 years,Policy term 12 to 35 years,SA + SRB + FAB at maturity,Immediate death benefit for nominee,Loan facility after 3 years,Accidental death rider option,Section 80C tax deduction')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span><h3>Bima Jyoti (860)</h3><div class="pc-num">Plan 860 · Guaranteed Return Plan</div><p>Non-participating endowment with Guaranteed Additions (₹50/₹1000 SA/yr) instead of bonuses. Know your exact maturity amount from day one — zero uncertainty.</p></div><div class="pc-ft"><span class="ft">Guaranteed returns</span><span class="ft">Fixed additions</span><span class="ft">No market risk</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Bima Jyoti','860','endow','Bima Jyoti (Plan 860) is a non-linked, non-participating endowment plan with Guaranteed Additions of ₹50 per ₹1000 Sum Assured per year throughout the policy term. Unlike bonus-based plans, you know your exact maturity amount from day one. Policy term: 15 to 20 years. Entry age: 90 days to 60 years. Ideal for risk-averse investors who want complete certainty about returns.','Guaranteed Additions ₹50/₹1000/yr,Know exact maturity from start,Term 15 to 20 years,Entry age 90 days to 60 years,Accidental death rider available,Death benefit with guaranteed additions,Premium waiver benefit,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
+      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span>
+        <h3>Bima Jyoti (Plan 760)</h3><div class="pc-num">Table 760 · UIN 512N339V03 · Guaranteed Return Plan</div>
+        <p>Non-participating endowment with Guaranteed Additions of ₹50/₹1000 SA/year. Know your exact maturity from day one — zero uncertainty, zero market risk.</p></div>
+        <div class="pc-ft"><span class="ft">Guaranteed returns</span><span class="ft">₹50/₹1000/yr GA</span><span class="ft">No market risk</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Bima Jyoti','760','endow','Bima Jyoti (Table 760) is a non-linked, non-participating endowment plan with Guaranteed Additions of ₹50 per ₹1000 Sum Assured per year throughout the policy term. You know your exact maturity from day one. Policy term: 15 to 20 years. Entry age: 90 days to 60 years. Min SA ₹1 Lakh. Ideal for risk-averse investors who want complete certainty.','Min SA ₹1 Lakh,Guaranteed Additions ₹50/₹1000/yr,Know exact maturity from day one,Entry age 90 days to 60 years,Policy term 15 to 20 years,Accidental death rider available,Death benefit with GAs accrued,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span><h3>New Endowment Plan (914)</h3><div class="pc-num">Plan 914 · Basic Endowment</div><p>The foundation of LIC's endowment range. Straightforward, reliable protection + savings for 12–35 years. Perfect entry-level plan for first-time buyers age 8–55.</p></div><div class="pc-ft"><span class="ft">Age 8–55</span><span class="ft">Term 12–35 yrs</span><span class="ft">Simple & reliable</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Endowment Plan','914','endow','New Endowment Plan (914) is LICs most basic savings-cum-protection endowment plan. Entry age 8 to 55 years. Policy term 12 to 35 years. On maturity: SA + Simple Reversionary Bonus + Final Additional Bonus is paid. On death: SA paid immediately to nominee. A simple no-frills plan perfect for first-time insurance buyers looking to start saving early.','Entry age 8 to 55 years,Policy term 12 to 35 years,SA + SRB + FAB at maturity,Immediate death benefit for family,Low minimum premium,Loan facility after 3 years,Accidental death rider option,Section 80C tax deduction')">View Full Details</button></div></div>
+      <div class="pc" data-c="endow"><div class="pc-top"><span class="badge be">Endowment</span>
+        <h3>Single Premium Endowment (Plan 717)</h3><div class="pc-num">Table 717 · UIN 512N283V03 · Single Premium</div>
+        <p>Pay just once, stay covered for the full policy term. Ideal for those with lump-sum funds — a one-time investment that builds wealth with LIC bonuses and full life cover.</p></div>
+        <div class="pc-ft"><span class="ft">One-time premium</span><span class="ft">Full life cover</span><span class="ft">Bonus accrues</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Single Premium Endowment','717','endow','Single Premium Endowment (Table 717) requires only one premium payment at inception. Life cover continues for the full policy term. Simple Reversionary Bonus accrues annually. Maturity = SA + Bonus + FAB. Entry age 90 days to 65 years. Min SA ₹50,000. Policy term 10 to 25 years. Ideal for lump-sum investors such as retirees, NRIs, or those receiving a windfall.','Min SA ₹50,000,Single one-time premium only,Entry age 90 days to 65 years,Policy term 10 to 25 years,Annual bonus on Sum Assured,FAB payable at maturity,Loan facility available,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
 
-      <!-- WHOLE LIFE -->
-      <div class="pc" data-c="whole"><div class="pc-top"><span class="badge bw">Whole Life</span><h3>Jeevan Umang (945)</h3><div class="pc-num">Plan 945 · Whole Life + Lifetime Pension</div><p>After premium term, receive 8% of SA every year for LIFE. At age 100 (or death), full SA + accrued bonus is paid. India's best retirement + wealth plan combined.</p></div><div class="pc-ft"><span class="ft">8%/yr lifetime income</span><span class="ft">Full SA at 100</span><span class="ft">Retirement plan</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Umang','945','whole','Jeevan Umang (Plan 945) is LICs flagship whole life plan. After premium payment term (15-40 years), you receive 8% of Basic SA every year for LIFE until age 100. At age 100 (or on death), full SA + accrued Simple Reversionary Bonus + FAB is paid. Entry age: 90 days to 55 years. This plan simultaneously acts as a retirement pension plan and a whole life endowment — truly unique in LICs portfolio.','8% SA paid annually for lifetime,Whole life cover till age 100,Full SA + bonus at age 100/death,Entry age 90 days to 55 years,Premium terms 15 to 40 years,Accidental death rider option,Critical illness rider available,Section 80C + 10(10D) tax benefits')">View Full Details</button></div></div>
+      <!-- ===== WHOLE LIFE ===== -->
+      <div class="pc" data-c="whole"><div class="pc-top"><span class="badge bw">Whole Life</span>
+        <h3>Jeevan Umang (Plan 745)</h3><div class="pc-num">Table 745 · UIN 512N312V03 · Whole Life + Lifetime Pension</div>
+        <p>After premium term, receive 8% of SA every year for LIFE. At age 100 or death, full SA + all accrued bonuses paid. India's best retirement + whole life plan combined.</p></div>
+        <div class="pc-ft"><span class="ft">8%/yr for lifetime</span><span class="ft">Full SA at 100</span><span class="ft">Retirement plan</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Umang','745','whole','Jeevan Umang (Table 745) is LICs flagship whole life plan. After premium payment term (15–40 years), you receive 8% of Basic SA every year for LIFE until age 100. At age 100 or on death, full SA + accrued SRB + FAB is paid. Entry age: 90 days to 55 years. Min SA ₹2 Lakh. Premium terms 15 to 40 years. Unique in offering both lifetime income and wealth accumulation.','Min SA ₹2 Lakh,Entry age 90 days to 55 years,Premium terms 15 to 40 years,8% SA paid annually for lifetime,Full SA + bonus at age 100/death,Whole life cover till age 100,Accidental death rider available,Section 80C + 10(10D) tax benefits')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="whole"><div class="pc-top"><span class="badge bw">Whole Life</span><h3>Whole Life Plan (802)</h3><div class="pc-num">Plan 802 · Classic Whole Life</div><p>LIC's traditional whole life policy. Protection for your entire lifetime. SA + all bonuses paid to nominees on death — whenever it occurs. Perfect for legacy/estate planning.</p></div><div class="pc-ft"><span class="ft">Lifetime protection</span><span class="ft">Legacy planning</span><span class="ft">Flexible pay</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Whole Life Plan','802','whole','Whole Life Plan (802) provides life cover for the entire lifetime of the insured. Premium can be paid throughout life or for a limited period. The Sum Assured plus accumulated bonuses are paid on death — whenever it occurs. There is no maturity benefit — the entire corpus is designed for your nominees. This is the classic estate planning tool ensuring your family inherits maximum wealth.','Protection for entire lifetime,Flexible premium paying period,SA + Full bonuses paid on death,No fixed maturity date,Ideal for legacy and estate planning,Loan facility against policy,Section 80C deduction on premiums,Reversionary bonus accrues yearly')">View Full Details</button></div></div>
+      <div class="pc" data-c="whole"><div class="pc-top"><span class="badge bw">Whole Life</span>
+        <h3>Jeevan Utsav (Plan 871)</h3><div class="pc-num">Table 871 · UIN 512N360V01 · Whole Life Savings</div>
+        <p>LIC's newest whole life plan. Flexible income benefit — choose between regular income payouts or lump sum at maturity. Full life cover throughout. Ideal for wealth creation and legacy planning.</p></div>
+        <div class="pc-ft"><span class="ft">Flexible income option</span><span class="ft">Lifetime protection</span><span class="ft">Legacy planning</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Utsav','871','whole','Jeevan Utsav (Table 871) is LICs newest whole life savings plan. Two benefit options: Option A (Flexi Income) — receive regular income after premium term. Option B (Flexi Income + Return of Premium) — income plus return of premiums at specific intervals. Min SA ₹5 Lakh. Entry age 90 days to 65 years. Premium paying terms: 5 to 16 years. Full whole life cover throughout.','Min SA ₹5 Lakh,Entry age 90 days to 65 years,Premium paying term 5 to 16 years,Option A: Regular flexi income,Option B: Income + return of premium,Whole life cover throughout,Guaranteed income after premium term,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
 
-      <!-- MONEY BACK -->
-      <div class="pc" data-c="money"><div class="pc-top"><span class="badge bm">Money Back</span><h3>New Money Back — 20 Yrs (920)</h3><div class="pc-num">Plan 920 · 20-Year Money Back</div><p>Get cash every 5 years! 20% of SA at years 5, 10, 15 and remaining 40% + full bonus at year 20. Bonus accrues on FULL SA throughout. Perfect for milestones.</p></div><div class="pc-ft"><span class="ft">Payouts at 5,10,15,20</span><span class="ft">Bonus on full SA</span><span class="ft">Liquidity built-in</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Money Back 20 Yrs','920','money','New Money Back 20 Years (Plan 920) provides periodic payouts: 20% of SA at year 5, 20% at year 10, 20% at year 15, and 40% + accrued Simple Reversionary Bonus + FAB at year 20. Importantly, bonuses accrue on the FULL Sum Assured throughout — even after partial payouts. On death during the policy term, full SA is paid regardless of survival benefits already paid. Great for milestone financial planning.','20% SA at years 5, 10, 15,40% SA + full bonus at year 20,Bonus on FULL SA throughout,Death benefit = full SA always,Entry age 13 to 50 years,Accidental death rider available,Loan after 3 premium years,80C + 10(10D) tax benefits')">View Full Details</button></div></div>
+      <!-- ===== MONEY BACK ===== -->
+      <div class="pc" data-c="money"><div class="pc-top"><span class="badge bm">Money Back</span>
+        <h3>New Money Back — 20 Yrs (Plan 720)</h3><div class="pc-num">Table 720 · UIN 512N280V03 · 20-Year Money Back</div>
+        <p>Cash payouts every 5 years! 20% of SA at years 5, 10, 15 and remaining 40% + full bonus at year 20. Bonus accrues on FULL SA throughout. Perfect for milestone planning.</p></div>
+        <div class="pc-ft"><span class="ft">Payouts at 5,10,15,20</span><span class="ft">Bonus on full SA</span><span class="ft">Liquidity built-in</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Money Back 20 Yrs','720','money','New Money Back 20 Years (Table 720) provides survival benefits: 20% of SA at year 5, 20% at year 10, 20% at year 15, and 40% + SRB + FAB at year 20. Bonus accrues on FULL SA even after partial payouts. On death: full SA paid regardless of survival benefits already received. Min SA ₹1 Lakh. Entry age 13 to 50 years.','Min SA ₹1 Lakh,Entry age 13 to 50 years,20% SA at years 5, 10, 15,40% SA + full bonus at year 20,Bonus on FULL SA throughout,Death benefit always full SA,Accidental death rider available,80C + 10(10D) tax benefits')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="money"><div class="pc-top"><span class="badge bm">Money Back</span><h3>New Money Back — 25 Yrs (921)</h3><div class="pc-num">Plan 921 · 25-Year Money Back</div><p>15% of SA at years 5, 10, 15, 20 and 40% + full bonus at year 25. Longer horizon = higher bonus accumulation. For bigger life goals — house, children, retirement.</p></div><div class="pc-ft"><span class="ft">5 payout points</span><span class="ft">High bonus corpus</span><span class="ft">Long-term plan</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Money Back 25 Yrs','921','money','New Money Back 25 Years (Plan 921) provides survival benefits: 15% of SA at years 5, 10, 15, and 20, and 40% of SA + accrued Simple Reversionary Bonus + FAB at year 25. Bonus accumulates on FULL Sum Assured throughout all 25 years. This extended timeline means significantly more bonus accumulation. Death benefit always equals full SA regardless of payouts made.','15% SA at years 5, 10, 15, 20,40% SA + full bonus at year 25,Higher total bonus than 20yr plan,Death benefit full SA always,Entry age 13 to 45 years,Accidental death rider option,Loan facility after 3 years,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
+      <div class="pc" data-c="money"><div class="pc-top"><span class="badge bm">Money Back</span>
+        <h3>New Money Back — 25 Yrs (Plan 721)</h3><div class="pc-num">Table 721 · UIN 512N281V03 · 25-Year Money Back</div>
+        <p>15% of SA at years 5, 10, 15, 20 and remaining 40% + full bonus at year 25. Longer horizon means significantly higher bonus accumulation — for bigger life goals.</p></div>
+        <div class="pc-ft"><span class="ft">5 payout milestones</span><span class="ft">High bonus corpus</span><span class="ft">Long-term wealth</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Money Back 25 Yrs','721','money','New Money Back 25 Years (Table 721) provides: 15% of SA at years 5, 10, 15, 20 and 40% of SA + SRB + FAB at year 25. Bonus accumulates on FULL SA for all 25 years — significantly more bonus than the 20-year plan. Death benefit always equals full SA. Min SA ₹1 Lakh. Entry age 13 to 45 years.','Min SA ₹1 Lakh,Entry age 13 to 45 years,15% SA at years 5, 10, 15, 20,40% SA + full bonus at year 25,Higher total bonus than 20yr plan,Death benefit always full SA,Loan facility after 3 years,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="money"><div class="pc-top"><span class="badge bm">Money Back</span><h3>Jeevan Tarun (934)</h3><div class="pc-num">Plan 934 · Children's Money Back</div><p>Flexible payouts for children aged 20–24 (choose 5%–20%/yr), then remaining corpus + bonus at age 25. Customizable for your child's higher education and career start.</p></div><div class="pc-ft"><span class="ft">Custom payout %</span><span class="ft">Age 20–25 payouts</span><span class="ft">Child education</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Tarun','934','money','Jeevan Tarun (Plan 934) is a money back plan for children. Parent buys for child aged 0-12 years. Unique: choose to receive 5%, 10%, 15%, or 20% of SA annually from ages 20 to 24. Remaining SA + accrued bonus paid at age 25. Perfectly aligns payouts with higher education costs and career startup. Premium waiver benefit is available on the proposer.','Entry age 90 days to 12 years,4 payout options (5%-20%/yr),Annual payouts ages 20 to 24,Full remaining SA + bonus at 25,Premium waiver on proposer death,Death benefit throughout policy,Ideal for higher education funding,80C + 10(10D) tax benefits')">View Full Details</button></div></div>
+      <div class="pc" data-c="money"><div class="pc-top"><span class="badge bm">Money Back</span>
+        <h3>Jeevan Tarun (Plan 734)</h3><div class="pc-num">Table 734 · UIN 512N299V03 · Children's Money Back</div>
+        <p>Flexible payouts for your child aged 20–24 (choose 5%–20%/yr), then remaining corpus + bonus at age 25. Fully customizable — aligns with higher education and career milestones.</p></div>
+        <div class="pc-ft"><span class="ft">Custom payout %</span><span class="ft">Age 20–25 payouts</span><span class="ft">Child education</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Tarun','734','money','Jeevan Tarun (Table 734) is a money back plan for children. Parent buys for child aged 90 days to 12 years. Unique: choose to receive 5%, 10%, 15%, or 20% of SA annually from ages 20 to 24. Remaining SA + SRB + FAB paid at age 25. Perfectly aligns payouts with higher education costs and career startup. Premium waiver available on proposer death.','Entry age 90 days to 12 years,4 payout options 5% to 20%/yr,Annual payouts ages 20 to 24,Remaining SA + full bonus at 25,Premium waiver on proposer death,Death benefit throughout policy,Ideal for higher education funding,80C + 10(10D) tax benefits')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="money"><div class="pc-top"><span class="badge bm">Money Back</span><h3>Jeevan Shiromani (947)</h3><div class="pc-num">Plan 947 · Premium HNI Money Back</div><p>Exclusively for HNIs. Min SA ₹1 Crore. Guaranteed Additions + Critical Illness cover for 15 conditions + periodic survival benefits. LIC's most feature-rich plan.</p></div><div class="pc-ft"><span class="ft">Min SA ₹1 Crore</span><span class="ft">Critical illness rider</span><span class="ft">Guaranteed additions</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Shiromani','947','money','Jeevan Shiromani (Plan 947) is LICs exclusive premium money back plan with minimum SA of ₹1 Crore. Features: Guaranteed Additions of ₹65-75 per ₹1000 SA per year, survival benefits at fixed intervals, built-in Critical Illness Benefit covering 15 critical illnesses, and a substantial final maturity payout. Designed for high-income individuals who want periodic liquidity plus maximum protection.','Min SA ₹1 Crore,Guaranteed Additions ₹65-75/₹1000/yr,15 critical illnesses covered,Survival benefits at intervals,Premium waiver on critical illness,Accidental death & disability benefit,Death benefit with additions,Ideal for HNI wealth planning')">View Full Details</button></div></div>
+      <div class="pc" data-c="money"><div class="pc-top"><span class="badge bm">Money Back</span>
+        <h3>Jeevan Shiromani (Plan 947)</h3><div class="pc-num">Table 947 · UIN 512N332V01 · Premium HNI Money Back</div>
+        <p>Exclusively for HNI clients. Min SA ₹1 Crore. Guaranteed Additions + Critical Illness cover for 15 conditions + periodic survival benefits. LIC's most feature-rich plan.</p></div>
+        <div class="pc-ft"><span class="ft">Min SA ₹1 Crore</span><span class="ft">15 critical illnesses</span><span class="ft">Guaranteed additions</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Shiromani','947','money','Jeevan Shiromani (Table 947) is LICs exclusive premium money back plan with minimum SA of ₹1 Crore. Features: Guaranteed Additions of ₹65–75 per ₹1000 SA per year, survival benefits at fixed intervals, built-in Critical Illness Benefit covering 15 conditions, and a large final maturity payout. Premium paying terms: 14, 16, or 20 years. Designed for high-income individuals.','Min SA ₹1 Crore,Guaranteed Additions ₹65-75/₹1000/yr,15 Critical Illnesses covered,Survival benefits at intervals,Premium waiver on critical illness,Accidental death & disability benefit,PPT 14, 16, or 20 years,Ideal for HNI wealth planning')">View Full Details</button></div></div>
 
-      <!-- TERM -->
-      <div class="pc" data-c="term"><div class="pc-top"><span class="badge bt">Term / Protection</span><h3>LIC Tech-Term (854)</h3><div class="pc-num">Plan 854 · Online Pure Term</div><p>LIC's online pure term plan — maximum life cover at minimum premium. Level or Increasing SA option. Buy online, no agent commission = lowest possible cost.</p></div><div class="pc-ft"><span class="ft">Online purchase</span><span class="ft">Level/Increasing SA</span><span class="ft">Max cover, low cost</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('LIC Tech-Term','854','term','LIC Tech-Term (Plan 854) is a non-linked, non-participating online term insurance plan. Death benefit options: Option 1: Level SA (fixed). Option 2: Increasing SA (10% per year up to 2x original SA). Maximum life cover at the most affordable premium. Entry age 18 to 65 years. Policy term 10 to 40 years. Minimum SA ₹50 Lakh. No maturity benefit — pure life protection.','Online purchase only,Option 1: Level Sum Assured,Option 2: Increasing SA (10%/yr),Entry age 18 to 65 years,Term 10 to 40 years,Min Sum Assured ₹50 Lakh,No maturity — pure protection,80C deduction on premium paid')">View Full Details</button></div></div>
+      <!-- ===== TERM ===== -->
+      <div class="pc" data-c="term"><div class="pc-top"><span class="badge bt">Term / Protection</span>
+        <h3>New Tech Term (Plan 954)</h3><div class="pc-num">Table 954 · UIN 512N336V02 · Online Pure Term</div>
+        <p>LIC's online pure term plan — maximum life cover at minimum premium. Level or Increasing SA option. Purchase directly online. Min SA ₹50 Lakh. No agent commission.</p></div>
+        <div class="pc-ft"><span class="ft">Online only</span><span class="ft">Min SA ₹50 Lakh</span><span class="ft">Level/Increasing SA</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Tech Term','954','term','New Tech Term (Table 954) is a non-linked, non-participating online pure term plan. Option 1: Level SA — fixed throughout. Option 2: Increasing SA — 10% per year up to 2× original SA. Max life cover at lowest cost. Entry age 18 to 65 years. Policy term 10 to 40 years. Min SA ₹50 Lakh. No maturity benefit — pure protection. Must be purchased online.','Online purchase only,Min SA ₹50 Lakh,Option 1: Level Sum Assured,Option 2: Increasing SA (10%/yr cap 2x),Entry age 18 to 65 years,Policy term 10 to 40 years,Max maturity age 80 years,Section 80C deduction on premium')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="term"><div class="pc-top"><span class="badge bt">Term / Protection</span><h3>Jeevan Amar (855)</h3><div class="pc-num">Plan 855 · Offline Pure Term</div><p>Offline version of LIC's pure term plan via agents. Same features as Tech-Term with special discounted premium rates for women and non-smokers.</p></div><div class="pc-ft"><span class="ft">Women discount</span><span class="ft">Non-smoker rates</span><span class="ft">Agent-assisted</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Amar','855','term','Jeevan Amar (Plan 855) is the offline version of LICs pure term plan. Same two death benefit options: Level SA or Increasing SA. Special lower premium rates for non-smokers and female lives. Entry age 18 to 65 years. Policy term 10 to 40 years. Minimum SA ₹25 Lakh. Suitable for those wanting agent-guided, personalized term insurance.','Offline agent-assisted purchase,Level or Increasing SA options,Special lower premiums for women,Non-smoker special discount rates,Entry age 18 to 65 years,Term 10 to 40 years,Min SA ₹25 Lakh,Optional accident benefit rider')">View Full Details</button></div></div>
+      <div class="pc" data-c="term"><div class="pc-top"><span class="badge bt">Term / Protection</span>
+        <h3>New Jeevan Amar (Plan 955)</h3><div class="pc-num">Table 955 · UIN 512N350V02 · Offline Pure Term</div>
+        <p>Offline agent-assisted pure term plan. Level or Increasing SA options. Special discounted rates for women and non-smokers. Min SA ₹25 Lakh. Highly customizable cover.</p></div>
+        <div class="pc-ft"><span class="ft">Min SA ₹25 Lakh</span><span class="ft">Women discount</span><span class="ft">Non-smoker rates</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Jeevan Amar','955','term','New Jeevan Amar (Table 955) is the offline pure term plan via agents. Two death benefit options: Level SA or Increasing SA (10%/yr). Special lower premium rates for non-smoker lives and female lives. Entry age 18 to 65 years. Policy term 10 to 40 years. Min SA ₹25 Lakh. Single, regular, or limited premium options available.','Min SA ₹25 Lakh,Level or Increasing SA options,Special lower premium for women,Non-smoker special discount rates,Entry age 18 to 65 years,Policy term 10 to 40 years,Single/Regular/Limited premium,Accidental death rider available')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="term"><div class="pc-top"><span class="badge bt">Term / Protection</span><h3>Saral Jeevan Bima (859)</h3><div class="pc-num">Plan 859 · IRDAI Standard Term</div><p>IRDAI-mandated standardized term plan. Minimal documentation, simple features, no complex terms. Ideal for first-time insurance buyers who want straightforward protection.</p></div><div class="pc-ft"><span class="ft">Min documentation</span><span class="ft">IRDAI standardized</span><span class="ft">Simple terms</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Saral Jeevan Bima','859','term','Saral Jeevan Bima (Plan 859) is a standardized term insurance plan as mandated by IRDAI — uniform across all insurers. Simple, standardized terms with minimal documentation. SA range ₹5 Lakh to ₹25 Lakh. Entry age 18 to 65 years. Policy term 5 to 40 years. No complex conditions. Ideal for individuals seeking uncomplicated, affordable term protection.','SA range ₹5 Lakh to ₹25 Lakh,Minimal documentation required,Standardized IRDAI terms,Entry age 18 to 65 years,Policy term 5 to 40 years,Simple death benefit payout,No complex exclusions,Section 80C tax deduction')">View Full Details</button></div></div>
+      <div class="pc" data-c="term"><div class="pc-top"><span class="badge bt">Term / Protection</span>
+        <h3>Saral Jeevan Bima (Plan 859)</h3><div class="pc-num">Table 859 · UIN 512N341V01 · IRDAI Standard Term</div>
+        <p>IRDAI-mandated standardized term plan. Minimal documentation, simple features. SA range ₹5 Lakh–₹25 Lakh. Ideal for first-time buyers seeking straightforward, affordable protection.</p></div>
+        <div class="pc-ft"><span class="ft">SA ₹5L – ₹25L</span><span class="ft">Min documentation</span><span class="ft">IRDAI standard</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Saral Jeevan Bima','859','term','Saral Jeevan Bima (Table 859) is the standardized term plan mandated by IRDAI — uniform across all insurers. SA range ₹5 Lakh to ₹25 Lakh in multiples of ₹50,000. Entry age 18 to 65 years. Policy term 5 to 40 years. Max maturity age 70 years. Minimal documentation. No complex conditions or exclusions. Min annual premium ₹3,000.','SA range ₹5 Lakh to ₹25 Lakh,Multiples of ₹50,000,Entry age 18 to 65 years,Policy term 5 to 40 years,Minimal documentation required,Min annual premium ₹3,000,Standardized IRDAI terms,Section 80C tax deduction')">View Full Details</button></div></div>
 
-      <!-- PENSION -->
-      <div class="pc" data-c="pen"><div class="pc-top"><span class="badge bp">Pension / Annuity</span><h3>Jeevan Shanti (850)</h3><div class="pc-num">Plan 850 · Immediate / Deferred Annuity</div><p>Pay once, get pension for LIFE. 10 annuity options including joint life. Deferred annuity option gives higher rates. The most comprehensive pension plan by LIC.</p></div><div class="pc-ft"><span class="ft">Single premium</span><span class="ft">10 annuity options</span><span class="ft">Joint life option</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Shanti','850','pen','Jeevan Shanti (Plan 850) is LICs flagship single premium annuity plan. Option A: Immediate Annuity — pension begins immediately. Option B: Deferred Annuity — pension begins after a deferment period at higher rates. 10 annuity options available including lifetime pension, pension with return of purchase price, joint life pension, etc. Min purchase price ₹1.5 Lakh. No age limit for immediate annuity.','Single premium only,Immediate or Deferred annuity,10 annuity payout options,Joint life pension option,Return of purchase price on death,Min purchase price ₹1.5 Lakh,No max age for immediate annuity,Pension for LIFE guaranteed')">View Full Details</button></div></div>
+      <!-- ===== PENSION ===== -->
+      <div class="pc" data-c="pen"><div class="pc-top"><span class="badge bp">Pension / Annuity</span>
+        <h3>New Jeevan Shanti (Plan 858)</h3><div class="pc-num">Table 858 · UIN 512N338V05 · Immediate/Deferred Annuity</div>
+        <p>Pay once, receive pension for LIFE. 10 annuity options including joint life. Deferred annuity gives higher rates. LIC's most comprehensive and popular pension plan.</p></div>
+        <div class="pc-ft"><span class="ft">Single premium</span><span class="ft">10 annuity options</span><span class="ft">Joint life available</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Jeevan Shanti','858','pen','New Jeevan Shanti (Table 858) is LICs flagship single premium annuity plan. Option A: Immediate Annuity — pension starts immediately. Option B: Deferred Annuity — pension starts after deferment period at higher rates. 10 annuity payout options including lifetime pension, pension with return of purchase price, joint life pension. Min purchase price ₹1.5 Lakh.','Single premium only,Option A: Immediate Annuity,Option B: Deferred Annuity (higher rate),10 annuity payout options,Joint life annuity available,Return of purchase price on death,Min purchase price ₹1.5 Lakh,Pension for LIFE guaranteed')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="pen"><div class="pc-top"><span class="badge bp">Pension / Annuity</span><h3>Saral Pension (862)</h3><div class="pc-num">Plan 862 · IRDAI Standard Annuity</div><p>IRDAI standardized immediate annuity. Two simple options: lifetime pension only OR lifetime pension + 100% purchase price returned to nominee on death. Transparent and simple.</p></div><div class="pc-ft"><span class="ft">2 simple options</span><span class="ft">Purchase price return</span><span class="ft">IRDAI standard</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Saral Pension','862','pen','Saral Pension (Plan 862) is the standardized immediate annuity plan mandated by IRDAI. Only two options: Option 1: Life Annuity — pension for life, nothing on death. Option 2: Life Annuity with Return of Purchase Price — pension for life + full purchase price returned to nominee on death. Min annuity ₹1000/month. Loan available after 3 months.','IRDAI standardized annuity plan,Option 1: Lifetime pension only,Option 2: Pension + purchase price return,Min pension ₹1000 per month,Joint life annuity available,Loan after 3 months from purchase,Surrender on critical illness of spouse,No maximum entry age limit')">View Full Details</button></div></div>
+      <div class="pc" data-c="pen"><div class="pc-top"><span class="badge bp">Pension / Annuity</span>
+        <h3>Jeevan Akshay VII (Plan 857)</h3><div class="pc-num">Table 857 · UIN 512N337V06 · Immediate Annuity</div>
+        <p>Single premium immediate annuity with guaranteed pension amount known from day one. 10 flexible annuity options. Joint life option available. Fixed pension for life — no market risk.</p></div>
+        <div class="pc-ft"><span class="ft">Immediate pension</span><span class="ft">Guaranteed amount</span><span class="ft">10 options</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Akshay VII','857','pen','Jeevan Akshay VII (Table 857) is a single premium immediate annuity plan. Pension begins immediately after purchase. 10 annuity options available including: life annuity, annuity with return of purchase price, joint life options. Pension amount is fixed and guaranteed from day one — no surprises. Min purchase price ₹1 Lakh. No maximum entry age for immediate annuity.','Single premium plan,Immediate pension starts at once,10 annuity payout options,Guaranteed pension amount from day 1,Joint life annuity available,Return of purchase price option,Min purchase price ₹1 Lakh,Pension for LIFE guaranteed')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="pen"><div class="pc-top"><span class="badge bp">Pension / Annuity</span><h3>PM Vaya Vandana Yojana</h3><div class="pc-num">Govt. Scheme via LIC · Age 60+</div><p>Government of India's exclusive pension scheme for senior citizens through LIC. 7.4% guaranteed pension rate for 10 years. Max investment ₹15 lakh per senior citizen.</p></div><div class="pc-ft"><span class="ft">Age 60+ only</span><span class="ft">7.4% guaranteed</span><span class="ft">Govt. backed</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('PM Vaya Vandana Yojana','PMVVY','pen','PMVVY is a Government of India pension scheme exclusively managed through LIC for senior citizens aged 60+. Guaranteed pension rate of 7.4% per annum for 10 years. Maximum investment ₹15 Lakh per senior citizen. On death: full purchase price refunded to nominee. On survival at end of 10 years: purchase price + final pension installment paid back. 100% government backed.','Age 60 and above only,7.4% guaranteed pension rate,Max investment ₹15 Lakh,Monthly/quarterly/half-yearly/yearly options,On death: full purchase price refunded,Survival at 10 yrs: full purchase price back,100% Government of India backed,Loan up to 75% after 3 years')">View Full Details</button></div></div>
+      <div class="pc" data-c="pen"><div class="pc-top"><span class="badge bp">Pension / Annuity</span>
+        <h3>Saral Pension (Plan 862)</h3><div class="pc-num">Table 862 · UIN 512N341V01 · IRDAI Standard Annuity</div>
+        <p>IRDAI standardized immediate annuity. Two simple options: lifetime pension only OR lifetime pension + 100% purchase price returned on death. Min pension ₹1,000/month.</p></div>
+        <div class="pc-ft"><span class="ft">2 simple options</span><span class="ft">Purchase price return</span><span class="ft">IRDAI standard</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Saral Pension','862','pen','Saral Pension (Table 862) is the standardized IRDAI annuity plan. Option 1: Life Annuity only. Option 2: Life Annuity + Return of 100% Purchase Price on death. Min annuity ₹1,000/month. Joint life annuity available (spouse only). Loan available after 3 months. Surrender allowed on critical illness diagnosis. Online and offline purchase available.','IRDAI standardized annuity plan,Option 1: Lifetime pension only,Option 2: Pension + purchase price return,Min pension ₹1,000 per month,Joint life annuity with spouse,Loan available after 3 months,Surrender on critical illness,Available online and offline')">View Full Details</button></div></div>
 
-      <!-- ULIP -->
-      <div class="pc" data-c="ulip"><div class="pc-top"><span class="badge bu">ULIP / Market Linked</span><h3>Index Plus (873)</h3><div class="pc-num">Plan 873 · Index-Linked ULIP</div><p>India's first index ULIP by LIC. Invested in Nifty 50 or BSE Sensex index funds. 10x life cover + market-linked growth. Partial withdrawal after 5-year lock-in.</p></div><div class="pc-ft"><span class="ft">Nifty 50 / Sensex</span><span class="ft">10x cover</span><span class="ft">Partial withdrawal</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Index Plus','873','ulip','Index Plus (Plan 873) is LICs first index-linked ULIP. Premium invested in BSE Sensex or Nifty 50 index funds. Life cover = 10x annualized premium. Lower charges vs traditional ULIPs. 4 free fund switches per year. Partial withdrawals allowed after 5-year lock-in. Min annual premium ₹30,000. Policy term 10 to 25 years. Best for long-term market-linked wealth creation.','BSE Sensex or Nifty 50 fund options,10x annual premium life cover,4 free fund switches per year,Partial withdrawal after 5 yrs,Policy term 10 to 25 years,Min annual premium ₹30,000,Loyalty additions after lock-in,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
+      <div class="pc" data-c="pen"><div class="pc-top"><span class="badge bp">Pension / Annuity</span>
+        <h3>Jeevan Dhara II (Plan 872)</h3><div class="pc-num">Table 872 · UIN 512N362V01 · Regular Premium Pension</div>
+        <p>LIC's only regular/limited premium deferred annuity. Pay regularly and build a pension corpus. Guaranteed annuity from inception. 11 annuity options. Liquidity option available.</p></div>
+        <div class="pc-ft"><span class="ft">Regular premium</span><span class="ft">11 annuity options</span><span class="ft">Guaranteed from start</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Dhara II','872','pen','Jeevan Dhara II (Table 872) is LICs regular/limited premium deferred annuity — unique in offering non-single premium pension. Pay regularly and build corpus. Annuity rates guaranteed from inception. 11 annuity options available. Single life and joint life annuity. Liquidity option: receive lump sum in lieu of reduced annuity. Min entry age 20 years. Deferment period 5 to 45 years.','Regular or limited premium payment,Annuity rate guaranteed from start,11 annuity payout options,Single life and joint life options,Liquidity option available,Min entry age 20 years,Deferment period 5 to 45 years,Pension building through SIP-style')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="ulip"><div class="pc-top"><span class="badge bu">ULIP / Market Linked</span><h3>SIIP (852)</h3><div class="pc-num">Plan 852 · Multi-Fund ULIP</div><p>SIP-style ULIP with 4 fund options: Bond, Secured, Balanced, Growth. Systematic premium investment in market-linked funds + life cover. 4 free fund switches/year.</p></div><div class="pc-ft"><span class="ft">4 fund options</span><span class="ft">SIP-style investing</span><span class="ft">Free fund switch</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('SIIP','852','ulip','SIIP (Plan 852) is LICs regular premium ULIP. 4 fund options: Bond Fund (debt), Secured Fund (mostly debt), Balanced Fund, and Growth Fund (mostly equity). SIP-style systematic investment with life cover of 10x annual premium. 4 free fund switches per year. Partial withdrawal after 5-year lock-in. Loyalty additions from 6th year. Ideal for SIP discipline with insurance cover.','4 fund options: Bond to Growth,SIP-style premium investment,10x annual premium life cover,4 free fund switches per year,Partial withdrawal after 5 yrs,Loyalty additions from 6th year,Min annual premium ₹20,000,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
+      <!-- ===== ULIP ===== -->
+      <div class="pc" data-c="ulip"><div class="pc-top"><span class="badge bu">ULIP / Market Linked</span>
+        <h3>Index Plus (Plan 873)</h3><div class="pc-num">Table 873 · UIN 512L357V01 · Index-Linked ULIP</div>
+        <p>LIC's first index ULIP. Premium invested in Nifty 50 or BSE Sensex index funds. 10× life cover + market-linked growth. Partial withdrawal after 5-year lock-in. Best of both worlds.</p></div>
+        <div class="pc-ft"><span class="ft">Nifty 50 / Sensex</span><span class="ft">10× cover</span><span class="ft">Partial withdrawal</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Index Plus','873','ulip','Index Plus (Table 873) is LICs first index-linked ULIP. Premium invested in BSE Sensex or Nifty 50 index funds. Life cover = 10× annualized premium. Lower charges vs traditional ULIPs. 4 free fund switches per year. Partial withdrawals allowed after 5-year lock-in. Min annual premium ₹30,000. Policy term 10 to 25 years.','BSE Sensex or Nifty 50 options,10× annual premium life cover,Min annual premium ₹30,000,Policy term 10 to 25 years,4 free fund switches per year,Partial withdrawal after 5 yrs,Loyalty additions after lock-in,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
 
-      <!-- CHILD -->
-      <div class="pc" data-c="child"><div class="pc-top"><span class="badge bc">Child Plan</span><h3>LIC Amritbaal (874)</h3><div class="pc-num">Plan 874 · Latest Child Plan 2024</div><p>LIC's newest and most comprehensive child plan. On proposer's death: premiums waived + 10% SA annually to child till maturity + full SA+bonus at maturity. Complete child security.</p></div><div class="pc-ft"><span class="ft">Premium waiver</span><span class="ft">Annual income on death</span><span class="ft">Lumpsum at 18–25</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('LIC Amritbaal','874','child','LIC Amritbaal (Plan 874) is LICs latest child plan. Child entry age 0 to 13 years. Policy matures when child is 18 to 25 years. On death of proposer: all future premiums waived + child receives 10% of SA annually until maturity + full SA + bonuses paid at maturity. On survival of proposer to maturity: full SA + accrued bonuses paid. This is the most comprehensive child education plan available.','Child entry age 0 to 13 years,Maturity at child age 18 to 25,Premiums waived on proposer death,Annual 10% SA to child on death,Full SA + bonus at maturity always,Guarantees childs education fund,Annual Simple Reversionary Bonus,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
+      <div class="pc" data-c="ulip"><div class="pc-top"><span class="badge bu">ULIP / Market Linked</span>
+        <h3>SIIP (Plan 852)</h3><div class="pc-num">Table 852 · UIN 512L320V03 · Multi-Fund ULIP</div>
+        <p>SIP-style ULIP with 4 fund options: Bond, Secured, Balanced, Growth. Systematic premium investment + life cover of 10× annual premium. 4 free fund switches per year.</p></div>
+        <div class="pc-ft"><span class="ft">4 fund options</span><span class="ft">SIP-style investing</span><span class="ft">Free fund switch</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('SIIP','852','ulip','SIIP (Table 852) is LICs regular premium ULIP. 4 fund options: Bond Fund (debt), Secured Fund (mostly debt), Balanced Fund, Growth Fund (mostly equity). Life cover = 10× annual premium. 4 free fund switches per year. Partial withdrawal after 5-year lock-in. Loyalty additions from 6th year. Min annual premium ₹20,000. Policy term 10 to 25 years.','4 fund options Bond to Growth,SIP-style premium investment,10× annual premium life cover,Min annual premium ₹20,000,4 free fund switches per year,Partial withdrawal after 5 yrs,Loyalty additions from 6th year,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="child"><div class="pc-top"><span class="badge bc">Child Plan</span><h3>New Children's Money Back (932)</h3><div class="pc-num">Plan 932 · Child Money Back</div><p>Milestone-aligned payouts at child's age 18, 20, 22 (20% each) and remaining 40% + full bonus at age 25. Covers education + career start. Premium waiver on proposer's death.</p></div><div class="pc-ft"><span class="ft">Payouts at 18,20,22,25</span><span class="ft">Milestone-aligned</span><span class="ft">Premium waiver</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Childrens Money Back','932','child','New Childrens Money Back Plan (932) provides: 20% of SA at age 18, 20% at age 20, 20% at age 22, and remaining 40% + Simple Reversionary Bonus + FAB at age 25. These payouts align with key educational and career milestones. If proposer dies, future premiums are waived and the plan continues. Child entry age: 0 to 12 years.','Payouts at child ages 18, 20, 22, 25,20% SA at ages 18, 20, 22,40% SA + full bonuses at age 25,Premium waiver on proposer death,Child entry age 0 to 12 years,Death benefit to proposer if child dies,Covers key education milestones,80C + 10(10D) tax benefits')">View Full Details</button></div></div>
+      <div class="pc" data-c="ulip"><div class="pc-top"><span class="badge bu">ULIP / Market Linked</span>
+        <h3>New Pension Plus (Plan 867)</h3><div class="pc-num">Table 867 · UIN 512L356V01 · ULIP Pension Plan</div>
+        <p>Unit-linked pension plan — build your retirement corpus through market-linked investments. Single or regular premium. Annuity rate guaranteed from date of vesting. Online and offline purchase.</p></div>
+        <div class="pc-ft"><span class="ft">Market-linked pension</span><span class="ft">Single/Regular premium</span><span class="ft">Guaranteed annuity rate</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Pension Plus','867','ulip','New Pension Plus (Table 867) is a unit-linked non-participating individual pension plan. Build retirement corpus through market-linked investments. Single or regular premium. Guaranteed annuity rate from date of vesting. Fund options available. Min annual premium ₹10,000 (regular) or ₹30,000 (single). Entry age 25 to 75 years. Vesting age 30 to 80 years.','Unit-linked pension plan,Single or regular premium,Entry age 25 to 75 years,Vesting age 30 to 80 years,Min premium ₹10,000/yr regular,Guaranteed annuity rate at vesting,Fund switch options available,Available online and offline')">View Full Details</button></div></div>
 
-      <!-- MICRO -->
-      <div class="pc" data-c="micro"><div class="pc-top"><span class="badge br">Micro / Rural</span><h3>LIC Micro Bachat (951)</h3><div class="pc-num">Plan 951 · Micro Endowment</div><p>Affordable endowment for rural and low-income families. SA ₹50K–₹2 Lakh. Very low premiums, minimal documentation. Bringing financial security to every Indian home.</p></div><div class="pc-ft"><span class="ft">SA ₹50K–₹2 Lakh</span><span class="ft">Min documentation</span><span class="ft">Rural inclusive</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('LIC Micro Bachat','951','micro','LIC Micro Bachat (Plan 951) is a micro endowment plan for underserved, rural, and low-income populations. SA range ₹50,000 to ₹2 Lakh. Entry age 18 to 55 years. Policy term 10 to 15 years. Very affordable premiums with minimal documentation. Bonuses declared annually. On maturity: SA + bonuses. On death: SA immediately to nominee. First insurance plan for many rural families.','SA range ₹50,000 to ₹2 Lakh,Entry age 18 to 55 years,Policy term 10 to 15 years,Very affordable premiums,Minimal documentation required,Bonus declared annually,SA + bonuses paid at maturity,Inclusive financial protection plan')">View Full Details</button></div></div>
+      <!-- ===== CHILD ===== -->
+      <div class="pc" data-c="child"><div class="pc-top"><span class="badge bc">Child Plan</span>
+        <h3>LIC Amritbaal (Plan 774)</h3><div class="pc-num">Table 774 · UIN 512N365V02 · Latest Child Plan 2024</div>
+        <p>LIC's newest and most comprehensive child plan. On proposer's death: premiums waived + 10% SA annually + full SA + bonus at maturity. Complete child financial security.</p></div>
+        <div class="pc-ft"><span class="ft">Premium waiver</span><span class="ft">Annual income on death</span><span class="ft">Lumpsum at maturity</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('LIC Amritbaal','774','child','LIC Amritbaal (Table 774) is LICs newest child plan launched 2024. Child entry age 0 to 13 years. Policy matures when child is 18 to 25 years. On death of proposer: all future premiums waived + child receives 10% of SA annually until maturity + full SA + bonuses at maturity. On survival to maturity: full SA + SRB + FAB paid. Min SA ₹2 Lakh.','Min SA ₹2 Lakh,Child entry age 0 to 13 years,Maturity at child age 18 to 25,Premiums waived on proposer death,Annual 10% SA to child on death,Full SA + bonus at maturity always,Annual Simple Reversionary Bonus,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
 
-      <div class="pc" data-c="micro"><div class="pc-top"><span class="badge br">Micro / Rural</span><h3>Jeevan Pragati (838)</h3><div class="pc-num">Plan 838 · Auto-Increasing Cover</div><p>Death benefit automatically increases by 10% of SA every 5 years — at the same fixed premium. As your family's responsibilities grow, your protection grows automatically.</p></div><div class="pc-ft"><span class="ft">Auto-increasing cover</span><span class="ft">Fixed premium</span><span class="ft">Growing protection</span></div><div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Pragati','838','micro','Jeevan Pragati (Plan 838) is an endowment plan with an automatically increasing death benefit. Death benefit increases by 10% of SA every 5 years: 100% SA yr 1-5, 110% SA yr 6-10, 120% SA yr 11-15, 130% SA yr 16-20. Same premium throughout — more coverage over time without paying more. Entry age 12 to 45 years. Term 12 to 20 years. Ideal for young families.','Death cover grows 10% every 5 years,Same premium throughout policy,Entry age 12 to 45 years,Policy term 12 to 20 years,SA + bonuses at maturity,Accidental death benefit included,Loan facility available,Growing protection for growing family')">View Full Details</button></div></div>
+      <div class="pc" data-c="child"><div class="pc-top"><span class="badge bc">Child Plan</span>
+        <h3>New Children's Money Back (Plan 732)</h3><div class="pc-num">Table 732 · UIN 512N296V03 · Child Money Back</div>
+        <p>Milestone-aligned payouts at child's age 18, 20, 22 (20% each) and remaining 40% + full bonus at age 25. Covers education fees and career launch. Premium waiver on proposer's death.</p></div>
+        <div class="pc-ft"><span class="ft">Payouts at 18,20,22,25</span><span class="ft">Milestone-aligned</span><span class="ft">Premium waiver</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('New Childrens Money Back','732','child','New Childrens Money Back (Table 732): 20% of SA at child age 18, 20% at age 20, 20% at age 22, and 40% + SRB + FAB at age 25. Payouts align with education and career milestones. On proposer death: future premiums waived and plan continues. Child entry age: 0 to 12 years. Min SA ₹1 Lakh.','Min SA ₹1 Lakh,Child entry age 0 to 12 years,20% SA at ages 18, 20, 22,40% SA + full bonuses at age 25,Premium waiver on proposer death,Plan continues uninterrupted,Covers key education milestones,80C + 10(10D) tax benefits')">View Full Details</button></div></div>
 
-    </div>
+      <!-- ===== MICRO / RURAL ===== -->
+      <div class="pc" data-c="micro"><div class="pc-top"><span class="badge br">Micro / Rural</span>
+        <h3>LIC Micro Bachat (Plan 751)</h3><div class="pc-num">Table 751 · UIN 512N311V02 · Micro Endowment</div>
+        <p>Affordable endowment for rural and low-income families. SA ₹50,000–₹2 Lakh. Very low premiums, minimal documentation. Bringing financial security to every Indian home.</p></div>
+        <div class="pc-ft"><span class="ft">SA ₹50K–₹2 Lakh</span><span class="ft">Min documentation</span><span class="ft">Rural inclusive</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('LIC Micro Bachat','751','micro','LIC Micro Bachat (Table 751) is a micro endowment plan for rural and low-income populations. SA range ₹50,000 to ₹2 Lakh. Entry age 18 to 55 years. Policy term 10 to 15 years. Very affordable premiums with minimal documentation. Bonus declared annually. On maturity: SA + bonuses. On death: SA immediately to nominee.','SA range ₹50,000 to ₹2 Lakh,Entry age 18 to 55 years,Policy term 10 to 15 years,Very affordable premiums,Minimal documentation required,Annual bonus on SA,SA + bonuses paid at maturity,Inclusive financial protection plan')">View Full Details</button></div></div>
+
+      <div class="pc" data-c="micro"><div class="pc-top"><span class="badge br">Micro / Rural</span>
+        <h3>Jeevan Azad (Plan 868)</h3><div class="pc-num">Table 868 · UIN 512N358V01 · Flexible Endowment</div>
+        <p>Flexible endowment with guaranteed additions. Choose your own SA and premium term. Guaranteed Additions of ₹40/₹1000 SA/year. Suitable for salaried and self-employed individuals seeking flexibility.</p></div>
+        <div class="pc-ft"><span class="ft">Flexible terms</span><span class="ft">Guaranteed additions</span><span class="ft">₹40/₹1000/yr GA</span></div>
+        <div class="pc-btn-row"><button class="pc-btn" onclick="openM('Jeevan Azad','868','micro','Jeevan Azad (Table 868) is a non-linked non-participating individual savings plan with Guaranteed Additions of ₹40 per ₹1000 SA per year. Flexible policy term 10 to 20 years. Entry age 8 to 55 years. Min SA ₹2 Lakh. On maturity: SA + Guaranteed Additions. On death: SA + GAs paid to nominee. Simple, transparent and affordable.','Min SA ₹2 Lakh,Entry age 8 to 55 years,Policy term 10 to 20 years,Guaranteed Additions ₹40/₹1000/yr,Know maturity amount from start,SA + GAs at maturity,SA + GAs to nominee on death,Section 80C + 10(10D) benefits')">View Full Details</button></div></div>
+
+    </div><!-- end plans-grid -->
   </div>
 </section>
 
@@ -499,15 +593,15 @@ footer strong{color:var(--gold);}
   <div class="wrap">
     <div class="calc-layout">
       <div class="calc-left">
-        <div class="eyebrow why-eyebrow">Smart Financial Tools</div>
-        <h2 class="sec-title" style="color:#fff;">Calculate Your<br><em>Insurance Needs</em></h2>
+        <div class="eyebrow dark-ey">Smart Financial Tools</div>
+        <h2 class="sec-title dark-ti">Calculate Your<br><em>Insurance Needs</em></h2>
         <div class="bar"></div>
-        <p class="sec-sub why-sub">Precision calculators for every plan type — estimates, premiums, maturity corpus, pension income.</p>
+        <p class="sec-sub dark-su">Precision calculators for every plan type — estimate premiums, maturity corpus, and pension income instantly.</p>
         <div class="calc-feats">
           <div class="cf"><div class="cf-icon">🎯</div><div class="cf-text"><h4>Human Life Value Engine</h4><p>Based on 15× Annual Income Rule used by certified financial planners globally.</p></div></div>
           <div class="cf"><div class="cf-icon">📊</div><div class="cf-text"><h4>Endowment & Whole Life</h4><p>Estimate premium, SRB + FAB bonus, and final maturity corpus for any plan.</p></div></div>
-          <div class="cf"><div class="cf-icon">💸</div><div class="cf-text"><h4>Money Back Scheduler</h4><p>See your complete year-by-year payout schedule before you buy.</p></div></div>
-          <div class="cf"><div class="cf-icon">🌿</div><div class="cf-text"><h4>Pension & ULIP Calculator</h4><p>Monthly pension from Jeevan Shanti or projected ULIP corpus at 8–12% growth.</p></div></div>
+          <div class="cf"><div class="cf-icon">💸</div><div class="cf-text"><h4>Money Back Scheduler</h4><p>See your complete year-by-year payout schedule before you commit.</p></div></div>
+          <div class="cf"><div class="cf-icon">🌿</div><div class="cf-text"><h4>ULIP / Term / Pension</h4><p>Projected ULIP corpus at 8–12% or monthly pension from annuity plans.</p></div></div>
         </div>
       </div>
       <div class="calc-box">
@@ -531,10 +625,10 @@ footer strong{color:var(--gold);}
         <div class="panel" id="pt-endow">
           <div class="fg"><label>Select Plan</label>
             <select id="e-plan">
-              <option value="labh">Jeevan Labh (836) — Limited Pay</option>
-              <option value="anand">New Jeevan Anand (915) — Regular Pay</option>
-              <option value="umang">Jeevan Umang (945) — Whole Life</option>
-              <option value="jyoti">Bima Jyoti (860) — Guaranteed</option>
+              <option value="labh">Jeevan Labh (736) — Limited Pay</option>
+              <option value="anand">New Jeevan Anand (715) — Regular Pay</option>
+              <option value="umang">Jeevan Umang (745) — Whole Life</option>
+              <option value="jyoti">Bima Jyoti (760) — Guaranteed GA</option>
             </select>
           </div>
           <div class="fr">
@@ -549,9 +643,9 @@ footer strong{color:var(--gold);}
         <div class="panel" id="pt-mb">
           <div class="fg"><label>Select Plan</label>
             <select id="m-plan">
-              <option value="20">New Money Back 20 Yrs (920)</option>
-              <option value="25">New Money Back 25 Yrs (921)</option>
-              <option value="shiro">Jeevan Shiromani (947) — Min ₹1Cr</option>
+              <option value="20">New Money Back 20 Yrs (Plan 720)</option>
+              <option value="25">New Money Back 25 Yrs (Plan 721)</option>
+              <option value="shiro">Jeevan Shiromani (947) — Min ₹1 Cr</option>
             </select>
           </div>
           <div class="fr">
@@ -565,20 +659,20 @@ footer strong{color:var(--gold);}
         <div class="panel" id="pt-other">
           <div class="fg"><label>Select Calculator</label>
             <select id="o-type" onchange="chgOther()">
-              <option value="ulip">ULIP — Index Plus / SIIP</option>
-              <option value="term">Term — Tech-Term / Jeevan Amar</option>
-              <option value="pension">Pension — Jeevan Shanti</option>
+              <option value="ulip">ULIP — Index Plus (873) / SIIP (852)</option>
+              <option value="term">Term — New Tech Term (954) / Jeevan Amar (955)</option>
+              <option value="pension">Pension — Jeevan Shanti (858) / Jeevan Akshay (857)</option>
             </select>
           </div>
           <div class="fr">
             <div class="fg"><label>Age (yrs)</label><input type="number" id="o-age" placeholder="30"></div>
             <div class="fg"><label>Term / Period (yrs)</label><input type="number" id="o-term" placeholder="20"></div>
           </div>
-          <div class="fg"><label id="o-lbl">Annual Premium / Investment (₹)</label><input type="number" id="o-val" placeholder="e.g. 100000"></div>
+          <div class="fg"><label id="o-lbl">Annual Premium (₹)</label><input type="number" id="o-val" placeholder="e.g. 100000"></div>
           <button class="run" onclick="doOther()">Calculate →</button>
           <div class="res" id="r-other"></div>
         </div>
-      </div>
+      </div><!-- end calc-box -->
     </div>
   </div>
 </section>
@@ -591,7 +685,7 @@ footer strong{color:var(--gold);}
       <h2 class="sec-title" style="text-align:center;">Trusted by <em>Families</em> Across India</h2>
     </div>
     <div class="bar" style="margin:14px auto 0;"></div>
-    <div class="test-grid" style="margin-top:40px;">
+    <div class="test-grid">
       <div class="tc">
         <div class="stars">★★★★★</div>
         <blockquote>"Parshuram sir explained Jeevan Labh's bonus structure so clearly. I now understand exactly how my money grows. My family is protected and I'm building real wealth. Best advisor I've met."</blockquote>
@@ -611,48 +705,66 @@ footer strong{color:var(--gold);}
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- CONTACT / CTA -->
 <section class="sec cta-bg" id="contact">
   <div class="wrap">
     <div class="cta-layout">
       <div class="cta-left">
-        <div class="eyebrow why-eyebrow">Free Expert Consultation</div>
-        <h2 class="sec-title" style="font-size:2.4rem;">Get Your Personal<br><em>Insurance Blueprint</em></h2>
-        <p>Whether you're a first-time buyer or reviewing your portfolio — I'll create a 100% customized plan for your exact life situation. Completely free. Zero pressure.</p>
+        <div class="eyebrow dark-ey">Free Expert Consultation</div>
+        <h2 class="sec-title dark-ti" style="font-size:2.4rem;">Get Your Personal<br><em>Insurance Blueprint</em></h2>
+        <p style="color:rgba(255,255,255,0.65);font-size:1rem;line-height:1.8;margin-top:16px;">Whether you're a first-time buyer or reviewing your portfolio — I'll create a 100% customized plan for your exact life situation. Completely free. Zero pressure.</p>
         <div class="cta-pts">
           <div class="cpt">Detailed comparison of all relevant LIC plans</div>
           <div class="cpt">Tax saving strategy under 80C + 10(10D)</div>
           <div class="cpt">Premium vs maturity corpus illustration</div>
-          <div class="cpt">Health & general insurance review</div>
+          <div class="cpt">Health & general insurance portfolio review</div>
           <div class="cpt">Consultation in your preferred language</div>
-          <div class="cpt">Callback within 24 hours guaranteed</div>
+          <div class="cpt">Personal callback within 24 hours guaranteed</div>
         </div>
       </div>
+
+      <!-- FORM -->
       <div class="form-box">
-        <h3>Request a Free Callback</h3>
-        <p>I'll personally call you within 24 hours.</p>
-        <form action="https://formsubmit.co/4224386p@gmail.com" method="POST">
-          <input type="text" name="Client_Name" placeholder="Your Full Name" required>
-          <input type="tel" name="Phone_Number" placeholder="Your Phone Number" required>
-          <input type="email" name="Email" placeholder="Email Address (optional)">
-          <select name="Insurance_Type" required>
-            <option value="" disabled selected>Select Your Primary Interest</option>
-            <option>Life Insurance — LIC Endowment</option>
-            <option>Whole Life / Jeevan Umang</option>
-            <option>Money Back Plan</option>
-            <option>ULIP / Market Linked</option>
-            <option>Term Life Insurance</option>
-            <option>Child Plan</option>
-            <option>Pension / Retirement Plan</option>
-            <option>Health Insurance — Star Health</option>
-            <option>Vehicle / General — Go Digit</option>
-            <option>Full Portfolio Review</option>
-          </select>
-          <input type="text" name="Language" placeholder="Preferred Language (Hindi / Marathi / Gujarati)">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="🔔 New Lead — Insurance Consultation Request">
-          <button type="submit">📞 Get My Free Consultation</button>
-        </form>
+        <div id="form-area">
+          <h3>Request a Free Callback</h3>
+          <p>I'll personally call you within 24 hours.</p>
+          <form id="leadForm">
+            <input type="text" id="f-name" placeholder="Your Full Name" required>
+            <input type="tel" id="f-phone" placeholder="Your Phone Number" required>
+            <input type="email" id="f-email" placeholder="Email Address (optional)">
+            <select id="f-type" required>
+              <option value="" disabled selected>Select Your Primary Interest</option>
+              <option>Life Insurance — LIC Endowment</option>
+              <option>Whole Life / Jeevan Umang (745)</option>
+              <option>Money Back Plan</option>
+              <option>ULIP / Market Linked (Index Plus 873)</option>
+              <option>Term Life Insurance</option>
+              <option>Child Plan (Amritbaal 774)</option>
+              <option>Pension / Retirement Plan</option>
+              <option>Health Insurance — Star Health</option>
+              <option>Vehicle / General — Go Digit</option>
+              <option>Full Portfolio Review</option>
+            </select>
+            <input type="text" id="f-lang" placeholder="Preferred Language (Hindi / Marathi / Gujarati)">
+            <button type="submit" id="f-submit">📞 Get My Free Consultation</button>
+          </form>
+        </div>
+        <div id="thanks-area" style="display:none;text-align:center;padding:20px 0;">
+          <div style="font-size:4rem;margin-bottom:16px;">🎉</div>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--ink);margin-bottom:10px;">Thank You!</h3>
+          <p style="color:var(--muted);font-size:1rem;margin-bottom:6px;">Your request has been received successfully.</p>
+          <p style="color:var(--ink);font-weight:700;font-size:1rem;margin-bottom:20px;">Parshuram sir will personally call you within <span style="color:var(--gold);">24 hours</span> 📞</p>
+          <div style="background:linear-gradient(135deg,#e6f5ec,#c8e6c9);border:1px solid #81c784;border-radius:12px;padding:16px 20px;margin-bottom:22px;">
+            <p style="color:#1b5e20;font-weight:700;font-size:0.9rem;line-height:1.7;">🇮🇳 Backed by Government of India (Sec 37)<br>💰 100% Tax-Free Maturity under Sec 10(10D)<br>📲 Urgent help: <a href="https://wa.me/919054489003" style="color:#1b5e20;">WhatsApp +91-90544-89003</a></p>
+          </div>
+          <div style="background:#f0f4ff;border-radius:10px;padding:14px;font-size:0.9rem;color:var(--muted);">
+            Redirecting in <strong id="countdown" style="color:var(--gold);font-size:1.1rem;">10</strong> seconds...
+            <div style="margin-top:10px;height:5px;background:#e4eaf5;border-radius:10px;overflow:hidden;">
+              <div id="prog-bar" style="height:100%;width:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:10px;transition:width 1s linear;"></div>
+            </div>
+          </div>
+          <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" style="display:inline-block;margin-top:18px;padding:12px 28px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--ink);font-weight:700;border-radius:9px;text-decoration:none;font-size:0.95rem;">↑ Back to Top Now</a>
+        </div>
       </div>
     </div>
   </div>
@@ -663,10 +775,11 @@ footer strong{color:var(--gold);}
     <p><strong>Invest with Parshuram</strong> · Authorized LIC of India Agent · Star Health · Go Digit Insurance</p>
     <p>📞 +91-90544-89003 &nbsp;|&nbsp; 🗣️ English · हिंदी · मराठी · ગુજराती</p>
     <p>🎖️ Triple 15th August Excellence Medal &nbsp;|&nbsp; 🏆 National Winner Trophy 2023 &nbsp;|&nbsp; 🇮🇳 LIC Authorized Agent</p>
-    <p class="disc">Disclaimer: All calculator results are indicative estimates for illustration only. Actual premiums, bonuses and maturity values are determined by LIC of India's official tables. Past bonus declarations do not guarantee future performance. Tax benefits subject to prevailing Income Tax laws. Insurance is a subject matter of solicitation. Please read the policy document carefully before purchasing any insurance product.</p>
+    <p class="disc">Disclaimer: All calculator results are indicative estimates for illustration purposes only. Actual premiums, bonuses and maturity values are determined by LIC of India's official premium tables. Plan numbers verified from official LIC website (licindia.in) as of January 2026. Past bonus declarations do not guarantee future performance. Tax benefits subject to prevailing Income Tax laws. Insurance is a subject matter of solicitation. Please read the policy document carefully before purchasing any insurance product.</p>
   </div>
 </footer>
 
+<!-- WHATSAPP BUTTON -->
 <a href="https://wa.me/919054489003" class="wa" target="_blank">
   <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   WhatsApp
@@ -716,13 +829,10 @@ function doHLV(){
   const r=document.getElementById('r-hlv');
   if(!inc){r.innerHTML='<span style="color:var(--red)">Please enter your monthly income.</span>';r.classList.add('show');return;}
   const r15=inc*12*15;
-  const rYrs=inc*12*yrs;
   const rExp=exp*12*yrs*0.7;
   const rec=Math.max(r15,rExp);
-  r.innerHTML=`
-    <div class="rr"><span class="rl">15× Annual Income Rule</span><span class="rv">${fmt(r15)}</span></div>
-    <div class="rr"><span class="rl">Income-Years (${yrs} yrs)</span><span class="rv">${fmt(rYrs)}</span></div>
-    <div class="rr"><span class="rl">Family Expense Cover</span><span class="rv">${fmt(rExp)}</span></div>
+  r.innerHTML=`<div class="rr"><span class="rl">15× Annual Income Rule</span><span class="rv">${fmt(r15)}</span></div>
+    <div class="rr"><span class="rl">Family Expense Cover (${yrs} yrs)</span><span class="rv">${fmt(rExp)}</span></div>
     <div class="rr hi"><span class="rl" style="font-weight:700;color:var(--ink)">✦ Recommended Cover</span><span class="rv">${fmt(rec)}</span></div>
     <div class="stamp">🇮🇳 Sovereign Guarantee (Sec 37) · 💰 Tax-Free Maturity 10(10D)<br>Contact Parshuram for the right LIC plan to achieve this cover.</div>`;
   r.classList.add('show');
@@ -738,19 +848,23 @@ function doEndow(){
   if(!age||!term||!sa){r.innerHTML='<span style="color:var(--red)">Please fill all 3 fields.</span>';r.classList.add('show');return;}
   let ppt=term,br=0.048,fab=0.18,mult=1.06,note='';
   const af=1+(age-25)*0.003;
-  if(plan==='labh'){ppt=term-5;br=0.050;fab=0.20;mult=1.07;note=`<div style="background:#e8f0fd;border-radius:8px;padding:10px;font-size:0.8rem;color:#1a56c4;margin-top:8px;">Limited Pay: Pay ${ppt} yrs, covered ${term} yrs.</div>`;}
-  if(plan==='umang'){br=0.052;fab=0.22;mult=1.08;const p=sa*0.08;note=`<div style="background:#e6f5ec;border-radius:8px;padding:10px;font-size:0.85rem;color:#1a6e3a;font-weight:700;margin-top:8px;">🌿 After term: ₹${p.toLocaleString('en-IN')}/year lifetime pension!</div>`;}
-  if(plan==='jyoti'){br=0;fab=0;const ga=sa*(50/1000)*term;const mat=sa+ga;const prem=(sa/term)*mult*af;r.innerHTML=`<div class="rr"><span class="rl">Est. Annual Premium</span><span class="rv">${fmt(prem)}</span></div><div class="rr"><span class="rl">Guaranteed Additions</span><span class="rv">${fmt(ga)}</span></div><div class="rr hi"><span class="rl" style="font-weight:700;color:var(--ink)">✦ Guaranteed Maturity</span><span class="rv">${fmt(mat)}</span></div><div class="stamp">🇮🇳 Sovereign Guarantee · 💰 100% Tax-Free · Returns GUARANTEED from Day 1</div>`;r.classList.add('show');return;}
+  if(plan==='labh'){ppt=term-5;br=0.050;fab=0.20;mult=1.07;note=`<div style="background:#e8f0fd;border-radius:8px;padding:10px;font-size:0.8rem;color:#1a56c4;margin-top:8px;">Limited Pay: Pay ${ppt} yrs, covered ${term} yrs. Plan 736.</div>`;}
+  if(plan==='umang'){br=0.052;fab=0.22;mult=1.08;const p=sa*0.08;note=`<div style="background:#e6f5ec;border-radius:8px;padding:10px;font-size:0.85rem;color:#1a6e3a;font-weight:700;margin-top:8px;">🌿 After term: ${fmt(p)}/year lifetime pension! (Plan 745)</div>`;}
+  if(plan==='jyoti'){const ga=sa*(50/1000)*term;const mat=sa+ga;const prem=(sa/term)*mult*af;
+    r.innerHTML=`<div class="rr"><span class="rl">Est. Annual Premium</span><span class="rv">${fmt(prem)}</span></div>
+    <div class="rr"><span class="rl">Guaranteed Additions (₹50/₹1000/yr)</span><span class="rv">${fmt(ga)}</span></div>
+    <div class="rr hi"><span class="rl" style="font-weight:700;color:var(--ink)">✦ Guaranteed Maturity</span><span class="rv">${fmt(mat)}</span></div>
+    <div class="stamp">🇮🇳 Sovereign Guarantee · 💰 100% Tax-Free · Plan 760 — Returns GUARANTEED</div>`;
+    r.classList.add('show');return;}
   const prem=(sa/ppt)*mult*af;
   const srb=sa*br*term;
   const fabAmt=sa*fab;
   const mat=sa+srb+fabAmt;
   const tot=prem*ppt;
   const mx=(mat/tot).toFixed(2);
-  r.innerHTML=`
-    <div class="rr"><span class="rl">Est. Annual Premium</span><span class="rv">${fmt(prem)}</span></div>
+  r.innerHTML=`<div class="rr"><span class="rl">Est. Annual Premium</span><span class="rv">${fmt(prem)}</span></div>
     <div class="rr"><span class="rl">Total Premiums Paid</span><span class="rv">${fmt(tot)}</span></div>
-    <div class="rr"><span class="rl">Est. Reversionary Bonus</span><span class="rv">${fmt(srb)}</span></div>
+    <div class="rr"><span class="rl">Est. Simple Reversionary Bonus</span><span class="rv">${fmt(srb)}</span></div>
     <div class="rr"><span class="rl">Final Additional Bonus</span><span class="rv">${fmt(fabAmt)}</span></div>
     <div class="rr hi"><span class="rl" style="font-weight:700;color:var(--ink)">✦ Est. Maturity Corpus</span><span class="rv">${fmt(mat)}</span></div>
     <div class="rr"><span class="rl">Money Multiplier</span><span class="rv" style="color:var(--green);font-weight:700">${mx}× Returns</span></div>
@@ -766,7 +880,7 @@ function doMB(){
   const sa=parseFloat(document.getElementById('m-sa').value)||0;
   const r=document.getElementById('r-mb');
   if(!age||!sa){r.innerHTML='<span style="color:var(--red)">Please fill all fields.</span>';r.classList.add('show');return;}
-  if(plan==='shiro'&&sa<1000000){r.innerHTML='<span style="color:var(--red)">Jeevan Shiromani minimum SA is ₹1 Crore.</span>';r.classList.add('show');return;}
+  if(plan==='shiro'&&sa<1000000){r.innerHTML='<span style="color:var(--red)">Jeevan Shiromani (947) min SA is ₹1 Crore.</span>';r.classList.add('show');return;}
   let pts=[],term=20,br=0.046;
   if(plan==='20'){pts=[{y:5,p:0.20},{y:10,p:0.20},{y:15,p:0.20},{y:20,p:0.40}];}
   if(plan==='25'){term=25;pts=[{y:5,p:0.15},{y:10,p:0.15},{y:15,p:0.15},{y:20,p:0.15},{y:25,p:0.40}];}
@@ -775,11 +889,9 @@ function doMB(){
   const prem=(sa/term)*1.08*af;
   const srb=sa*br*term;
   const fabAmt=sa*0.18;
-  let rows=pts.map(p=>`<div class="rr"><span class="rl">Year ${p.y} — ${(p.p*100).toFixed(0)}% of SA</span><span class="rv">${fmt(sa*p.p)}</span></div>`).join('');
-  const last=sa*pts[pts.length-1].p;
+  const rows=pts.map(p=>`<div class="rr"><span class="rl">Year ${p.y} — ${(p.p*100).toFixed(0)}% of SA</span><span class="rv">${fmt(sa*p.p)}</span></div>`).join('');
   const total=sa+srb+fabAmt;
-  r.innerHTML=`
-    <div class="rr"><span class="rl">Est. Annual Premium</span><span class="rv">${fmt(prem)}</span></div>
+  r.innerHTML=`<div class="rr"><span class="rl">Est. Annual Premium</span><span class="rv">${fmt(prem)}</span></div>
     <div style="margin:8px 0 4px;font-size:0.78rem;font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Survival Benefit Schedule</div>
     ${rows}
     <div class="rr"><span class="rl">+ Bonus at Final Maturity</span><span class="rv">${fmt(srb+fabAmt)}</span></div>
@@ -790,7 +902,7 @@ function doMB(){
 
 // OTHER
 function chgOther(){
-  const lbls={ulip:'Annual Premium (₹)',term:'Sum Assured Needed (₹)',pension:'Single Purchase Price (₹)'};
+  const lbls={ulip:'Annual Premium / Investment (₹)',term:'Sum Assured Needed (₹)',pension:'Single Purchase Price (₹)'};
   document.getElementById('o-lbl').textContent=lbls[document.getElementById('o-type').value];
 }
 function doOther(){
@@ -803,31 +915,31 @@ function doOther(){
   let html='';
   if(type==='ulip'){
     if(term<10||term>25){r.innerHTML='<span style="color:var(--red)">ULIP term must be 10–25 years.</span>';r.classList.add('show');return;}
-    if(val<30000){r.innerHTML='<span style="color:var(--red)">Min ULIP premium is ₹30,000/yr.</span>';r.classList.add('show');return;}
+    if(val<20000){r.innerHTML='<span style="color:var(--red)">Min ULIP premium is ₹20,000/yr (SIIP) or ₹30,000/yr (Index Plus).</span>';r.classList.add('show');return;}
     const cover=val*10;
     const fv12=val*(((Math.pow(1.12,term)-1)/0.12)*(1.12))*0.88;
     const fv8=val*(((Math.pow(1.08,term)-1)/0.08)*(1.08))*0.88;
-    html=`<div class="rr"><span class="rl">Life Cover (10x)</span><span class="rv">${fmt(cover)}</span></div>
+    html=`<div class="rr"><span class="rl">Life Cover (10× premium)</span><span class="rv">${fmt(cover)}</span></div>
     <div class="rr"><span class="rl">Total Invested</span><span class="rv">${fmt(val*term)}</span></div>
     <div class="rr"><span class="rl">Est. Fund @8% growth</span><span class="rv">${fmt(fv8)}</span></div>
-    <div class="rr hi"><span class="rl" style="font-weight:700;color:var(--ink)">✦ Est. Fund @12% (Hist.)</span><span class="rv">${fmt(fv12)}</span></div>
-    <div style="background:#fff2e0;border-radius:8px;padding:9px;font-size:0.78rem;color:#b85a00;margin-top:8px;font-weight:600;">⚠️ Market-linked. 12% = historical Sensex avg. Not guaranteed.</div>
-    <div class="stamp">🛡️ Life cover guaranteed · 💰 Tax-free under 10(10D)</div>`;
+    <div class="rr hi"><span class="rl" style="font-weight:700;color:var(--ink)">✦ Est. Fund @12% (Hist. avg)</span><span class="rv">${fmt(fv12)}</span></div>
+    <div style="background:#fff2e0;border-radius:8px;padding:9px;font-size:0.78rem;color:#b85a00;margin-top:8px;font-weight:600;">⚠️ Market-linked returns. 12% = historical Sensex average — NOT guaranteed.</div>
+    <div class="stamp">🛡️ Life cover guaranteed · 💰 Tax-free under 10(10D) · Plans 873 / 852</div>`;
   }else if(type==='term'){
     const prem=(val*0.002)+(age*55);
     html=`<div class="rr"><span class="rl">Est. Annual Premium</span><span class="rv">${fmt(prem)}</span></div>
     <div class="rr"><span class="rl">Total Premiums (${term} yrs)</span><span class="rv">${fmt(prem*term)}</span></div>
     <div class="rr hi"><span class="rl" style="font-weight:700;color:var(--ink)">✦ Death Cover</span><span class="rv">${fmt(val)}</span></div>
-    <div style="background:#fde8e8;border-radius:8px;padding:9px;font-size:0.82rem;color:#b32020;margin-top:8px;font-weight:600;">Pure Protection — No Maturity Benefit. Maximum cover, minimum cost.</div>
-    <div class="stamp">🇮🇳 Sovereign Guarantee · 80C deduction on premium</div>`;
+    <div style="background:#fde8e8;border-radius:8px;padding:9px;font-size:0.82rem;color:#b32020;margin-top:8px;font-weight:600;">Pure Protection only — No Maturity Benefit. Plans 954 (online) / 955 (offline).</div>
+    <div class="stamp">🇮🇳 Sovereign Guarantee · 80C deduction on premium paid</div>`;
   }else{
     const annual=val*0.067;
     const monthly=annual/12;
     html=`<div class="rr"><span class="rl">Single Purchase Price</span><span class="rv">${fmt(val)}</span></div>
     <div class="rr"><span class="rl">Est. Annual Pension</span><span class="rv">${fmt(annual)}</span></div>
     <div class="rr hi"><span class="rl" style="font-weight:700;color:var(--ink)">✦ Est. Monthly Pension</span><span class="rv">${fmt(monthly)}</span></div>
-    <div style="background:#f0e8fb;border-radius:8px;padding:9px;font-size:0.82rem;color:#6622a0;margin-top:8px;font-weight:600;">💜 Pension paid for LIFE. Option to get purchase price back on death.</div>
-    <div class="stamp">🇮🇳 Sovereign Guarantee · Pension for LIFE</div>`;
+    <div style="background:#f0e8fb;border-radius:8px;padding:9px;font-size:0.82rem;color:#6622a0;margin-top:8px;font-weight:600;">💜 Pension for LIFE guaranteed. Option to get purchase price back on death. Plans 858 / 857.</div>
+    <div class="stamp">🇮🇳 Sovereign Guarantee · Pension for LIFE guaranteed</div>`;
   }
   r.innerHTML=html;r.classList.add('show');
 }
@@ -836,20 +948,59 @@ function doOther(){
 function openM(name,num,cat,desc,feats){
   const [cls,label]=catMap[cat];
   document.getElementById('m-title').textContent=name;
-  document.getElementById('m-num').textContent='Plan No. '+num+' · '+label;
+  document.getElementById('m-num').textContent='Table No. '+num+' · '+label;
   document.getElementById('m-desc').textContent=desc;
   document.getElementById('m-badge').innerHTML=`<span class="badge ${cls}">${label}</span>`;
   document.getElementById('m-feats').innerHTML=feats.split(',').map(f=>`<div class="mf">${f.trim()}</div>`).join('');
-  document.getElementById('m-wa').href=`https://wa.me/919054489003?text=Hi%20Parshuram%20sir%2C%20I%20am%20interested%20in%20${encodeURIComponent(name)}%20(Plan%20${num}).%20Please%20share%20a%20quote.`;
+  document.getElementById('m-wa').href=`https://wa.me/919054489003?text=Hi%20Parshuram%20sir%2C%20I%20am%20interested%20in%20${encodeURIComponent(name)}%20(Table%20${num}).%20Please%20share%20a%20premium%20quote.`;
   document.getElementById('mod').classList.add('open');
   document.body.style.overflow='hidden';
 }
 function closeM(){document.getElementById('mod').classList.remove('open');document.body.style.overflow='';}
 function chkClose(e){if(e.target===document.getElementById('mod'))closeM();}
 
+// FORM SUBMIT
+document.getElementById('leadForm').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btn=document.getElementById('f-submit');
+  btn.textContent='Sending...';btn.disabled=true;
+  const data=new FormData();
+  data.append('Client_Name',document.getElementById('f-name').value);
+  data.append('Phone_Number',document.getElementById('f-phone').value);
+  data.append('Email',document.getElementById('f-email').value);
+  data.append('Insurance_Type',document.getElementById('f-type').value);
+  data.append('Language',document.getElementById('f-lang').value);
+  data.append('_captcha','false');
+  data.append('_subject','🔔 New Lead — Insurance Consultation Request');
+  try{await fetch('https://formsubmit.co/ajax/4224386p@gmail.com',{method:'POST',body:data,headers:{'Accept':'application/json'}});}catch(err){}
+  document.getElementById('form-area').style.display='none';
+  document.getElementById('thanks-area').style.display='block';
+  let secs=10;
+  const cd=document.getElementById('countdown');
+  const pb=document.getElementById('prog-bar');
+  pb.style.width='100%';
+  const timer=setInterval(()=>{
+    secs--;cd.textContent=secs;pb.style.width=(secs/10*100)+'%';
+    if(secs<=0){
+      clearInterval(timer);
+      window.scrollTo({top:0,behavior:'smooth'});
+      setTimeout(()=>{
+        document.getElementById('thanks-area').style.display='none';
+        document.getElementById('form-area').style.display='block';
+        btn.textContent='📞 Get My Free Consultation';btn.disabled=false;
+        document.getElementById('leadForm').reset();
+      },500);
+    }
+  },1000);
+});
+
 // Scroll fade-in
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:0.08});
-document.querySelectorAll('.pc,.why-card,.fc,.tc').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition='opacity 0.5s ease, transform 0.5s ease';obs.observe(el);});
+document.querySelectorAll('.pc,.why-card,.fc,.tc').forEach(el=>{
+  el.style.opacity='0';el.style.transform='translateY(20px)';
+  el.style.transition='opacity 0.5s ease, transform 0.5s ease';
+  obs.observe(el);
+});
 </script>
 </body>
 </html>
